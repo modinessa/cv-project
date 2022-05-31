@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+//import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro';
+import {Box} from './components/Box';
+import {Button} from './components/Button';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+		<>
+			<Box title="Title of the Box" content="lorem blaaa"/>
+			<Button
+				//icon={<FontAwesomeIcon icon={regular("chevron-left")} />}
+				text="Go back"
+			/>
+			<Button text="learn more" />
+		</>
   );
 }
 
