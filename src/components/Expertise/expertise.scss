@@ -1,0 +1,17 @@
+@import '../../utils/variables.scss';
+
+.app-experience-item {
+	display: flex;
+}
+
+.app-experience-title {
+	min-width: 80px;
+}
+
+.app-experience-info {
+	margin-left: 30px;
+}
+
+h4 {
+	color: $raven-color;
+}

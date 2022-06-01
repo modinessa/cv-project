@@ -11,7 +11,7 @@ export function Feedback({users}) {
 			<ul className='app-feedbacks'>
 				{
 					users.map((user) => {
-						const key = `${user.name} ${user.company} ${number}`;
+						const key = `${user.name} ${number}`;
 						number ++;
 						return (
 							<li key={key} className='app-feedbacks-user'>
