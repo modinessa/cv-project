@@ -3,13 +3,13 @@ import React from 'react';
 export function Box( {title, content}) {
 	
 	return (
-		<div className='app-box'>
+		<section className='app-section'>
 			<h2 className='app-title'>
 				{title}
 			</h2>
 			<p>
 				{content}
 			</p>
-		</div>
+		</section>
 	)
 }

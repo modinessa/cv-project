@@ -1,0 +1,17 @@
+@import '../../utils/variables.scss';
+
+.app-navigation-panel {
+	background-color: $oxford-blue-color;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	min-width: 250px;
+	padding-top: 20px;
+}
+
+
+@media (max-width: 600px) {
+	.app-navigation-panel {
+		min-width: 54px;
+	}
+}

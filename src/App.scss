@@ -1,3 +1,70 @@
-.App {
-	text-align: center;
+@import 'assets/styles/normalize.scss';
+@import 'utils/variables.scss';
+
+body {
+	font-family: Open Sans;
+	font-style: normal;
+	color: $oxford-blue-color
+}
+
+#root {
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3 {
+	font-weight: 700;
+	line-height: 120%;
+}
+
+h1 {
+	font-size: 45px;
+}
+
+h2 {
+	color: $shamrock-color;
+	font-size: 25px;
+	margin-bottom: 30px;
+}
+
+h3 {
+	font-size: 16px;
+}
+
+h4 {
+	font-weight: 400;
+	line-height: 120%;
+	font-size: 16px;
+}
+
+p {
+	margin-top: 10px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.app-section {
+	margin: 20px 0px 10px 0px;
+	padding: 0px 36px 0px 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+button {
+	background-color: $oxford-blue-color;
+	border-radius: 5px;
+	color: $white-color;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 120%;
+	padding: 10px 20px;
+}
+
+button:hover {
+	background-color: $shamrock-color;
 }

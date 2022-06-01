@@ -1,0 +1,35 @@
+@import '../../utils/variables.scss';
+
+.photo-box {
+	display: flex;
+	flex-direction: column;
+}
+
+.main-photo {
+	border: solid 1px $white-color;
+	box-sizing: border-box;
+	border-radius: 50%;
+	width: 163px;
+	height: 163px;
+}
+
+.nav-panel-big img {
+	width: 100px;
+	height: 100px;
+}
+
+.nav-panel-big h3 {
+	margin-top: 9px;
+	margin-bottom: 25px;
+}
+
+.nav-panel-small img {
+	width: 40px;
+	height: 40px;
+}
+
+.nav-panel-big h3 {
+	color: $white-color;
+	display: block;
+	text-align: center;
+}

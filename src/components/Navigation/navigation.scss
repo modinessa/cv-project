@@ -1,0 +1,32 @@
+@import '../../utils/variables.scss';
+
+.app-navigation {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-top: 35px;
+}
+
+.app-navigation__nav-list-item {
+	text-decoration: none;
+	color: $raven-color;
+	display: block;
+	width: 100%;
+	height: 60px;
+}
+
+.app-navigation__nav-list-item:hover {
+	color: $shamrock-color;
+}
+
+.fa-icon-nav {
+	width: 14px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+@media (max-width: 600px) {
+	.button-name {
+		display: none;
+	}
+}
