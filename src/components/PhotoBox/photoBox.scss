@@ -1,6 +1,7 @@
 @import '../../assets/styles/variables.scss';
 
-.photo-box {
+.app-section_photo-box {
+	margin: 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -36,27 +37,27 @@
 
 }
 
-//.nav-panel-big img {
-//	width: 100px;
-//	height: 100px;
-//}
+.app-navigation-panel img {
+	width: 100px;
+	height: 100px;
+}
 
-//.app-navigation-panel h3 {
-//	display: none;
-//}
+.app-navigation-panel h1 {
+	font-size: 16px;
+}
 
-//.nav-panel-big h3 {
-//	margin-top: 9px;
-//	margin-bottom: 25px;
-//}
+.app-navigation-panel h2,
+.app-navigation-panel p {
+	display: none;
+}
 
-//.nav-panel-small img {
-//	width: 40px;
-//	height: 40px;
-//}
+@media (max-width: 600px) {
+	img.avatar {
+		width: 40px;
+		height: 40px;
+	}
 
-//.nav-panel-big h3 {
-//	color: $white-color;
-//	display: block;
-//	text-align: center;
-//}
+	.app-navigation-panel h1 {
+		display: none;
+	}
+}

@@ -17,5 +17,15 @@ button:hover {
 }
 
 .main-screen button {
-	margin-top: 0px;
+	margin-top: 10px;
+}
+
+.app-navigation-panel button {
+	background-color: transparent;
+	position: fixed;
+	bottom: 30px;
+}
+
+.app-navigation-panel button:hover {
+	color: $raven-color
 }

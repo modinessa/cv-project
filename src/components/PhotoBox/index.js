@@ -8,7 +8,7 @@ export function PhotoBox({name, title, description, avatar}) {
 
 	return (
 		<div
-				className='app-section photo-box'>
+				className='app-section_photo-box'>
 			<img
 				className='app-photo avatar'
 				src={avatar}

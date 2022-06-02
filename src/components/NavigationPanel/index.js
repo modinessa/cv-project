@@ -1,5 +1,5 @@
 import './navigationPanel.scss';
-import React from 'react';
+import React, { useCallback } from 'react';
 //import { useSelector } from "react-redux";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -12,6 +12,9 @@ import { PhotoBox } from '../PhotoBox';
 export function NavigationPanel() {
 
 	//const { isClosed } = useSelector((state) => state.navigation);
+	const clickHandler = useCallback(() =>  {
+		console.log('"Go back" is clicked'); //TODO add path
+	}, []);
 
 	return (
 		<div className="app-navigation-panel">
@@ -23,6 +26,7 @@ export function NavigationPanel() {
 			<Button
 					icon={<FontAwesomeIcon icon={faChevronLeft}/>}
 					text="Go back"
+					clickHandler={clickHandler}
 				/>
 		</div>
 	)
