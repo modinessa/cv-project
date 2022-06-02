@@ -1,5 +1,35 @@
+@import '../../assets/styles/variables.scss';
+
+.app-feedbacks-user {
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+
+.user-feedback {
+	background-color: $gallery-color;
+	padding: 15px;
+}
+
 .user-photo {
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
+}
+
+.user-info {
+	align-items: center;
+	display: flex;
+	margin-top: 20px;
+	font-size: 12px
+}
+
+.user-info div {
+	margin-left: 20px;
+}
+
+.user-info a {
+	margin-left: 3px;
+	color: $shamrock-color;
+	text-decoration: none;
+
 }

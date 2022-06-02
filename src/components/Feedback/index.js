@@ -8,33 +8,32 @@ export function Feedback({users}) {
 			<h2>
 				Feedbacks
 			</h2>
-			<ul className='app-feedbacks'>
+			<div className='app-feedbacks'>
 				{
 					users.map((user) => {
 						const key = `${user.name} ${number}`;
 						number ++;
 						return (
-							<li key={key} className='app-feedbacks-user'>
-								<p>{user.feedback}</p>
+							<div key={key} className='app-feedbacks-user'>
+								<div className='user-feedback'>
+									{user.feedback}
+								</div>
 								<div className='user-info'>
 									<img
 											className='app-photo user-photo'
 											src={user.photo}
 											alt={user.name}
 									/>
-									<p>
-										{user.company} 
-									</p>
+									<div>
+										{`${user.company},`} 
+									</div>
 									<a href={user.website}>{user.website.slice(8, -1)}</a>
 								</div>
-							</li>
+							</div>
 						)
 					})
 				}
-
-
-
-			</ul>
+			</div>
 		</section>
 	)
 }
