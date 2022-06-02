@@ -1,17 +1,20 @@
 import './navigation.scss';
 import React from 'react';
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser } from "@fortawesome/free-solid-svg-icons";
-import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
-import { faPencil } from "@fortawesome/free-solid-svg-icons";
-import { faDiamond } from "@fortawesome/free-solid-svg-icons";
-import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
-import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
-import { faComment } from "@fortawesome/free-solid-svg-icons";
+import { 
+	faUser,
+	faGraduationCap,
+	faPencil,
+	faDiamond,
+	faBriefcase,
+	faPaperPlane,
+	faComment
+} from "@fortawesome/free-solid-svg-icons";
 
-import { Link } from "react-router-dom";
+
 
 export function Navigation() {
 

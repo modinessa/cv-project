@@ -1,16 +1,18 @@
 import './App.scss';
 
-import { Box } from './components/Box/index';
-import { Expertise } from './components/Expertise/index';
-import { Feedback } from './components/Feedback';
 import { NavigationPanel } from './components/NavigationPanel/index';
+import { Box } from './components/Box/index';
+import { TimeLine } from './components/TimeLine';
+import { Expertise } from './components/Expertise/index';
+import { Portfolio } from './components/Portfolio/index';
+import { Contacts } from './components/Contacts';
+import { Feedback } from './components/Feedback';
 
 import { experience } from './components/Expertise/constants';
 import { education } from './components/TimeLine/constants';
 import { users } from './components/Feedback/constants';
 import { aboutMe } from './components/Box/constants';
 
-import { TimeLine } from './components/TimeLine';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
 				<Box title="About me" content={aboutMe}/>
 				<TimeLine data={education} />
 				<Expertise data={experience} />
+				<Portfolio />
+				<Contacts />
 				<Feedback users={users} />
 				
 				{/*<Button text="learn more" />*/}

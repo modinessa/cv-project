@@ -1,0 +1,25 @@
+@import '../../utils/variables.scss';
+
+
+.contacts-container {
+	align-items: center;
+	display: flex;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.contacts-container h3,
+h4 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+
+.contact-info {
+	margin-left: 20px;
+}
+
+.fa-icon-contacts {
+	height: 28px;
+	color: $shamrock-color;
+}
