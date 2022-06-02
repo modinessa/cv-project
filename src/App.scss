@@ -7,6 +7,18 @@ body {
 	color: $oxford-blue-color
 }
 
+//TODO hide scrillbar
+
+//body {
+//	-ms-overflow-style: none;
+//	scrollbar-width: none;
+//	overflow-y: scroll;
+//}
+
+//body::-webkit-scrollbar {
+//	display: none;
+//}
+
 #app-container {
 	display: flex;
 	margin: 0;
@@ -48,13 +60,16 @@ p {
 	line-height: 21px;
 }
 
-.app-section {
-	margin: 20px 0px 10px 0px;
-	padding: 0px 36px 0px 30px;
-	display: flex;
-	flex-direction: column;
-}
-
 .app-section-container {
 	background-color: $white-color;
+	height: 100vh;
+	overflow-y: auto;
+}
+
+.app-section {
+	margin: 20px 0px 10px 20px;
+	/*TODO check figma layout with matgin left*/
+	padding: 0px 30px 0px 30px;
+	display: flex;
+	flex-direction: column;
 }

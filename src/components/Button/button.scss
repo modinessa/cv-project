@@ -22,10 +22,43 @@ button:hover {
 
 .app-navigation-panel button {
 	background-color: transparent;
-	position: fixed;
-	bottom: 30px;
+	margin-bottom: 30px;
 }
 
 .app-navigation-panel button:hover {
 	color: $raven-color
+}
+
+div.app-section-container button {
+	display: flex;
+	padding: 0;
+	align-items: center;
+	justify-content: center;
+	min-width: 30px;
+	min-height: 30px;
+}
+
+div.app-section-container button:first-child {
+	position: fixed;
+	left: 250px;
+	top: 20px;
+	border-radius: 0px 5px 5px 0px;
+}
+
+div.app-section-container button:last-child {
+	position: fixed;
+	bottom: 0;
+	right: 36px;
+	border-radius: 5px 5px 0px 0px;
+}
+
+div.app-section-container button:hover {
+	background-color: $oxford-blue-color;
+	color: $shamrock-color;
+}
+
+@media (max-width: 600px) {
+	.text {
+		display: none;
+	}
 }

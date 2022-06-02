@@ -17,17 +17,19 @@ export function NavigationPanel() {
 	}, []);
 
 	return (
-		<div className="app-navigation-panel">
+		<aside className="app-navigation-panel">
 			<PhotoBox
 					name="John Doe"
 					avatar="http://avatars0.githubusercontent.com/u/246180?v=4"
 			/>
-			<Navigation/>
-			<Button
-					icon={<FontAwesomeIcon icon={faChevronLeft}/>}
-					text="Go back"
-					clickHandler={clickHandler}
+			<div className='nav-menu'>
+				<Navigation/>
+				<Button
+						icon={<FontAwesomeIcon icon={faChevronLeft}/>}
+						text="Go back"
+						clickHandler={clickHandler}
 				/>
-		</div>
+			</div>
+		</aside>
 	)
 }

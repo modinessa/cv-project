@@ -22,7 +22,7 @@ export function Navigation() {
 			<div className='app-navigation-button'>
 				<Link to="about me" className="app-navigation__nav-list-item">
 					<FontAwesomeIcon className='fa-icon-nav' icon={faUser}/>
-					<span className="button-name">About me</span>
+					<span className="item-name">About me</span>
 				</Link>
 			</div>
 			<div className='app-navigation-button'>

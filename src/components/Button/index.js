@@ -4,7 +4,7 @@ import React from 'react';
 export function Button({text, icon, clickHandler}) {
 	return (
 		<button className='app-button' onClick={clickHandler}>
-			{icon} {text}
+			{icon} <span className='text'>{text}</span>
 		</button>
 	)
 }
