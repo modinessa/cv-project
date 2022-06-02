@@ -7,7 +7,7 @@ body {
 	color: $oxford-blue-color
 }
 
-#root {
+#app-container {
 	display: flex;
 	margin: 0;
 	padding: 0;
@@ -55,16 +55,6 @@ p {
 	flex-direction: column;
 }
 
-button {
-	background-color: $oxford-blue-color;
-	border-radius: 5px;
-	color: $white-color;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 120%;
-	padding: 10px 20px;
-}
-
-button:hover {
-	background-color: $shamrock-color;
+.app-section-container {
+	background-color: $white-color;
 }

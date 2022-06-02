@@ -1,0 +1,25 @@
+@import '../../assets/styles/variables.scss';
+
+html {
+	min-height: 100%;
+	background: linear-gradient(0deg,
+			rgba(#000614, 0.7),
+			rgba(#000614, 0.7)),
+		url(../../assets/images/main-bg.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.main-screen {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translateY(-50%) translateX(-50%);
+	transform: translateY(-50%) translateX(-50%);
+}

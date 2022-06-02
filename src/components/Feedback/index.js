@@ -15,9 +15,9 @@ export function Feedback({users}) {
 						number ++;
 						return (
 							<div key={key} className='app-feedbacks-user'>
-								<div className='user-feedback'>
+								<blockquote className='user-feedback'>
 									{user.feedback}
-								</div>
+								</blockquote>
 								<div className='user-info'>
 									<img
 											className='app-photo user-photo'

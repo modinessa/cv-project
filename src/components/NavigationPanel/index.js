@@ -14,7 +14,7 @@ export function NavigationPanel() {
 	//const { isClosed } = useSelector((state) => state.navigation);
 
 	return (
-		<div className={"app-navigation-panel"}>
+		<div className="app-navigation-panel">
 			<PhotoBox
 					name="John Doe"
 					avatar="http://avatars0.githubusercontent.com/u/246180?v=4"
