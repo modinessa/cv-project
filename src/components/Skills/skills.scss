@@ -1,1 +1,9 @@
 @import '../../assets/styles/variables.scss';
+
+.skills-title {
+	display: flex;
+}
+
+.skills-title button {
+	border-radius: 5px;
+}
