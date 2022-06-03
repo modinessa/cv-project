@@ -45,7 +45,19 @@ div.app-section-container button:first-child {
 	border-radius: 0px 5px 5px 0px;
 }
 
-div.app-section-container button:last-child {
+#skills button {
+	max-width: fit-content;
+	position: static;
+	max-width: fit-content;
+	border-radius: 5px;
+	color: $white-color;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 120%;
+	padding: 10px 20px;
+}
+
+.app-section-container button:last-child {
 	position: fixed;
 	bottom: 0;
 	right: 36px;

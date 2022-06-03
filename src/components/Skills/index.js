@@ -16,7 +16,7 @@ export function Skills() {
 
 	return (
 		<section className='app-section'>
-			<div className='skills-title'>
+			<div id="skills" className='skills-title'>
 				<h2 className='app-title'>
 					Skills
 				</h2>
