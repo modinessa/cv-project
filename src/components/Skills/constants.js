@@ -1,7 +1,7 @@
 export const skills = [
 	{skill: "HTML", range: 100},
-	{skill: "CSS", range: 50},
-	{skill: "jQuery", range: 20},
-	{skill: "Php", range: 30},
-	{skill: "Laravel 2 (Bla-bla-bla)", range: 20}
+	{skill: "CSS", range: 75},
+	{skill: "jQuery", range: 25},
+	{skill: "Php", range: 20},
+	{skill: "Laravel 2 (Bla-bla-bla)", range: 10}
 ]

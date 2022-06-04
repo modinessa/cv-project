@@ -2,7 +2,16 @@
 
 .time-line-container {
 	padding: 5px 0 0 10px;
+	max-height: 330px;
+	overflow: scroll;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
 }
+
+.time-line-container::-webkit-scrollbar {
+	display: none;
+}
+
 
 .time-line-item {
 	display: flex;

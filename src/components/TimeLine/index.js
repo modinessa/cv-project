@@ -1,5 +1,6 @@
 import './timeLine.scss';
 import React from 'react';
+import { Info } from '../Info';
 
 
 export function TimeLine({data}) {
@@ -22,14 +23,7 @@ let number = 1;
 							<div className='info-container'>
 								<div className='triangle-left'>
 								</div>
-								<div className='info'>
-									<h3>
-										{date.title}
-									</h3>
-									<p>
-										{date.text}
-									</p>
-								</div>
+								<Info title={date.title} text={date.text} />
 							</div>
 						</div>
 					)

@@ -5,10 +5,9 @@
 	color: $white-color;
 	display: inline;
 	margin-bottom: 5px;
-	padding: 5px 0px 5px 15px;
-	max-height: fit-content;
-}
-
-.range-bar div {
+	padding: 5px 15px 5px 15px;
+	max-height: 20px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 	overflow: hidden;
 }

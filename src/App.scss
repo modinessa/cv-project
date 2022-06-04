@@ -9,20 +9,17 @@ body {
 
 //TODO hide scrillbar
 
-//body {
-//	-ms-overflow-style: none;
-//	scrollbar-width: none;
-//	overflow-y: scroll;
-//}
-
-//body::-webkit-scrollbar {
-//	display: none;
-//}
-
 #app-container {
+	overflow: hidden;
 	display: flex;
 	margin: 0;
 	padding: 0;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+#app-container::-webkit-scrollbar {
+	display: none;
 }
 
 h1,

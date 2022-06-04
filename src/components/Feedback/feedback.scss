@@ -35,5 +35,17 @@
 	margin-left: 3px;
 	color: $shamrock-color;
 	text-decoration: none;
+}
+
+.app-feedbacks p {
+	margin: 0;
+}
+
+.app-feedbacks h3 {
+	display: none;
+}
+
+.app-feedbacks .info {
+	padding: 15px;
 
 }

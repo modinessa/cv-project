@@ -1,4 +1,5 @@
 import React from 'react';
+import { Info } from '../Info';
 import './feedback.scss'
 
 export function Feedback({users}) {
@@ -15,9 +16,7 @@ export function Feedback({users}) {
 						number ++;
 						return (
 							<div key={key} className='app-feedbacks-user'>
-								<blockquote className='user-feedback'>
-									{user.feedback}
-								</blockquote>
+								<Info text={user.feedback} />
 								<div className='user-info'>
 									<img
 											className='app-photo user-photo'
