@@ -6,8 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
 import { Navigation } from "../Navigation";
-import { Button } from '../Button/index';
-import { PhotoBox } from '../PhotoBox';
+import { Button } from '../../../components/Button';
+import { PhotoBox } from '../../../components/PhotoBox';
 
 export function NavigationPanel() {
 

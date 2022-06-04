@@ -1,20 +1,20 @@
 import './skills.scss';
-import '../Button/button.scss';
+import '../../../components/Button/button.scss';
 import React, { useCallback } from 'react';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
 
 import { useForm } from "react-hook-form";
-import { Button } from '../Button/index';
-import { Input } from '../Input/index';
-import { Ruler } from '../Ruler/index';
+import { Button } from '../../../components/Button';
+import { Input } from '../../../components/Input';
+import { RangeBar } from './RangeBar';
+import { Ruler } from './Ruler';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPencil } from "@fortawesome/free-solid-svg-icons";
-import { RangeBar } from '../RangeBar';
 
 import { skills } from './constants';
-import { updateSkillsUi } from '../../utils/updateSkillsUi';
+import { updateSkillsUi } from './utils/updateSkillsUi';
 
 const schema = yup.object({
   skill: yup.string().required(),

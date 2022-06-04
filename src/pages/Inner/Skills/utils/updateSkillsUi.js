@@ -3,7 +3,7 @@ export function updateSkillsUi(data, skills) {
 	let alreadiInArr = false;
 
 	for(const skill of skills) {
-		if (skill.skill.toLowerCase() == data.skill.toLowerCase()) {
+		if (skill.skill.toLowerCase() == data.skill.toLowerCase().trim()) {
 				skill.range = data.range;
 				alreadiInArr = true;
 			}

@@ -1,7 +1,7 @@
 import './main.scss';
 import React, { useCallback } from 'react';
-import { PhotoBox } from '../PhotoBox/index';
-import { Button } from '../Button';
+import { PhotoBox } from '../../components/PhotoBox';
+import { Button } from '../../components/Button';
 
 export function Main() {
 
@@ -10,7 +10,7 @@ export function Main() {
 	}, []);
 
 	return (
-		<section className='app-section main-screen'>
+			<div className='main-screen'>
 				<PhotoBox 
 							name="John Doe"
 							title="Programmer. Creative. Innovator"
@@ -19,6 +19,6 @@ export function Main() {
 						/>
 				<Button text="Know more"
 								clickHandler={clickHandler}/>
-		</section>
+			</div>
 	)
 }

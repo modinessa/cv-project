@@ -1,6 +1,6 @@
 import './timeLine.scss';
 import React from 'react';
-import { Info } from '../Info';
+import { Info } from '../../../components/Info';
 
 
 export function TimeLine({data}) {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Info } from '../Info';
+import { Info } from '../../../components/Info';
 import './feedback.scss'
 
 export function Feedback({users}) {
