@@ -1,15 +1,17 @@
 @import '../../assets/styles/variables.scss';
 
 
-button {
+.app-button,
+.submit-btn {
 	background-color: $oxford-blue-color;
-	max-width: fit-content;
 	border-radius: 5px;
 	color: $white-color;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 120%;
 	padding: 10px 20px;
+	text-align: center;
+	vertical-align: middle;
 }
 
 button:hover {
@@ -29,16 +31,10 @@ button:hover {
 	color: $raven-color
 }
 
-div.app-section-container button {
-	display: flex;
-	padding: 0;
-	align-items: center;
-	justify-content: center;
-	min-width: 30px;
-	min-height: 30px;
-}
-
 div.app-section-container button:first-child {
+	width: 30px;
+	height: 30px;
+	padding: 0;
 	position: fixed;
 	left: 250px;
 	top: 20px;
@@ -46,18 +42,18 @@ div.app-section-container button:first-child {
 }
 
 #skills button {
-	max-width: fit-content;
 	position: static;
-	max-width: fit-content;
+	min-width: fit-content;
+	height: 40px;
 	border-radius: 5px;
-	color: $white-color;
-	font-weight: 400;
 	font-size: 16px;
-	line-height: 120%;
 	padding: 10px 20px;
 }
 
 .app-section-container button:last-child {
+	width: 30px;
+	height: 30px;
+	padding: 0;
 	position: fixed;
 	bottom: 0;
 	right: 36px;
@@ -72,5 +68,10 @@ div.app-section-container button:hover {
 @media (max-width: 600px) {
 	.text {
 		display: none;
+	}
+
+	div.app-section-container button:first-child {
+		position: fixed;
+		left: 54px;
 	}
 }

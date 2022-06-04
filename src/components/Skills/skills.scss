@@ -2,10 +2,26 @@
 
 .skills-title {
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	width: 100%;
-
 }
 
-.skills-title button {
+.edit-skills {
+	border: 1px solid $shamrock-color;
+	padding: 20px 15px;
+	margin-top: 10px;
 	border-radius: 5px;
+}
+
+.submit-btn {
+	margin: 0;
+	width: 100px;
+}
+
+.skill-ranges {
+	margin-top: 40px;
+	//margin-right: 30px;
+	display: flex;
+	flex-direction: column;
 }
