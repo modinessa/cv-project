@@ -23,3 +23,20 @@ h4 {
 	height: 28px;
 	color: $shamrock-color;
 }
+
+.contact-info a {
+	color: $oxford-blue-color;
+	font-weight: 700;
+	line-height: 120%;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+a.small-link {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-weight: 400;
+	line-height: 120%;
+	font-size: 16px;
+	color: $raven-color;
+}

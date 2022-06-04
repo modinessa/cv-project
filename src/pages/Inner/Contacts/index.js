@@ -5,12 +5,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
 	faPhone,
 	faEnvelope
-} from "@fortawesome/free-solid-svg-icons";
+} from '@fortawesome/free-solid-svg-icons';
 import { 
 	faTwitter,
 	faFacebook,
 	faSkype
- } from "@fortawesome/free-brands-svg-icons";
+ } from '@fortawesome/free-brands-svg-icons';
 
 export function Contacts() {
 return (
@@ -21,34 +21,46 @@ return (
 		<div className='contacts-container'>
 			<FontAwesomeIcon className='fa-icon-contacts' icon={faPhone}/>
 			<div className='contact-info'>
-				<h3>500 342 242</h3>
+				<a href='tel:500-342-0242'>500 342 242</a>
 			</div>
 		</div>
 		<div className='contacts-container'>
 			<FontAwesomeIcon className='fa-icon-contacts' icon={faEnvelope}/>
 			<div className='contact-info'>
-				<h3>office@kamsolutions.pl</h3>
+				<a href='mailto:office@kamsolutions.pl'>office@kamsolutions.pl</a>
 			</div>
 		</div>
 		<div className='contacts-container'>
 			<FontAwesomeIcon className='fa-icon-contacts' icon={faTwitter}/>
 			<div className='contact-info'>
 				<h3>Twitter</h3>
-				<h4>{"//https://twitter.com/wordpress"}</h4>
+				<a
+					href='https://twitter.com/wordpress'
+					className='small-link'>
+						{`//https://twitter.com/wordpress`}
+				</a>
 			</div>
 		</div>
 		<div className='contacts-container'>
 			<FontAwesomeIcon className='fa-icon-contacts' icon={faFacebook}/>
 			<div className='contact-info'>
 				<h3>Facebook</h3>
-				<h4>{"//https:/www.facebook.com/facebook/.pl"}</h4>
+				<a
+					href='https://www.facebook.com/avdeeva.inessa' 
+					className='small-link'>
+						{`https://www.facebook.com`}
+				</a>
 			</div>
 		</div>
 		<div className='contacts-container'>
 			<FontAwesomeIcon className='fa-icon-contacts' icon={faSkype}/>
 			<div className='contact-info'>
 				<h3>Skype</h3>
-				<h4>kamsolutions.pl</h4>
+				<a
+					href='skype:echo123?call'
+					className='small-link'>
+						kamsolutions.pl
+				</a>
 			</div>
 		</div>
 	</section>

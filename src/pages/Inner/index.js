@@ -12,7 +12,7 @@ import { Contacts } from './Contacts';
 import { Feedback } from './Feedback';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
 import { experience } from './Expertise/constants';
 import { education } from './TimeLine/constants';
@@ -29,14 +29,14 @@ const goUp = useCallback(() =>  {
 	}, []);
 
 	return (
-		<main id="app-container">
+		<main id='app-container'>
 			<NavigationPanel />
 			<div className='app-section-container'>
 				<Button 
 							icon={<FontAwesomeIcon icon={faBars}/>}
 							clickHandler={toggleMenu}
 				/>
-				<Box title="About me" content={aboutMe}/>
+				<Box title='About me' content={aboutMe}/>
 				<TimeLine data={education} />
 				<Expertise data={experience} />
 				<Skills />
