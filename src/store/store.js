@@ -1,8 +1,5 @@
-import { configureStore } from "@reduxjs/toolkit";
-import navigationReducer from "../pages/Inner/NavigationPanel/navigationPanelReducer";
+import { createStore } from 'redux';
+import { appReducers } from '../reducers/index';
 
-export const store = configureStore({
-	reducer: {
-		navigation: navigationReducer,
-	}
-});
+export const store = createStore(appReducers);
+

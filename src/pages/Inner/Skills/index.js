@@ -1,6 +1,7 @@
 import './skills.scss';
 import '../../../components/Button/button.scss';
 import React, { useCallback } from 'react';
+import { useSelector, useDispatch} from 'react-redux';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
 
@@ -22,6 +23,14 @@ const schema = yup.object({
 });
 
 export function Skills() {
+
+	const skillsState = useSelector((state) => {
+		console.log(state)
+		return state.skillsListReducer
+	});
+	const dispatch = useDispatch();
+
+	console.log(skills)
 
 	let number = 1;
 

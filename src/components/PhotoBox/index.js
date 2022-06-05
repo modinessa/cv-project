@@ -1,10 +1,7 @@
 import './photoBox.scss';
 import React from 'react';
-import { useSelector } from "react-redux";
 
 export function PhotoBox({name, title, description, avatar}) {
-
-	const { isClosed } = useSelector((state) => state.navigation);
 
 	return (
 		<div
