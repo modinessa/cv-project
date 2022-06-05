@@ -1,0 +1,23 @@
+@import '../../../../../assets/styles/variables.scss';
+
+.card-info {
+	display: none;
+	align-self: flex-start;
+	box-sizing: border-box;
+	padding: 20px 15px;
+	border: 1px solid $alto-color;
+	z-index: 10;
+	background-color: $white-color;
+	width: 308px;
+	height: 192px;
+}
+
+.card-info h4 {
+	font-weight: 700;
+	color: $shamrock-color
+}
+
+.card-info a {
+	font-size: 14px;
+	color: $shamrock-color;
+}

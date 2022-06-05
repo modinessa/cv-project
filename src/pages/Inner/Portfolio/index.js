@@ -1,58 +1,61 @@
 import './portfolio.scss';
 import React from 'react';
  
-import IsoTopeGrid from 'react-isotope';
-
 import code from '../../../assets/images/code.png';
 import ui from '../../../assets/images/ui.png';
+import { PortfolioInfo } from './PortfolioInfo/PortfolioInfo';
 
 const filters = [
-	{label: 'all', isChecked: true},
+	{label: 'All', isChecked: true},
 	{label: 'Code', isChecked: false},
 	{label: 'UI', isChecked: false}
 ];
 
-const cadrdsLayout = [
+const cardsLayout = [
 	 {
     id: 1,
 		img: code,
-    row: 0,
-    col: 0,
-    w: 1,
-    h: 1,
-    filter: ['code']
+    filter:'code',
+		portfolioInfo: {
+			title: 'Some text',
+			text: 'Donec pede justo, fringilla vel, aliquet nec, vulel, aliquet nec, vulputate eget eget, arcu. In enim justo',
+			url: 'https://somesite.com'
+		}
   },
 	 {
     id: 2,
 		img: ui,
-    row: 0,
-    col: 1,
-    w: 1,
-    h: 1,
-    filter: ['ui']
+    filter:'ui',
+		portfolioInfo: {
+			title: 'Title',
+			text: 'Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo',
+			url: 'https://somesite.com'
+		}
   },
 	 {
     id: 3,
 		img: code,
-    row: 0,
-    col: 2,
-    w: 1,
-    h: 1,
-    filter: ['code']
+    filter:'code',
+		portfolioInfo: {
+			title: 'Bla-bla',
+			text: 'Pede justo, fringilla vel, aliquet nec, vulputate eget,vel, aliquet nec, vulputate eget arcu. In enim justo',
+			url: 'https://somesite.com'
+		}
   },
 	 {
     id: 4,
 		img: ui,
-    row: 0,
-    col: 3,
-    w: 1,
-    h: 1,
-    filter: ['ui']
+    filter:'ui',
+		portfolioInfo: {
+			title: 'Awesome text',
+			text: 'Donec pede jusaliquet necto, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo',
+			url: 'https://somesite.com'
+		}
   },
 ]
 
-export function Portfolio({data}) {
-	//let number = 1;
+export function Portfolio() {
+
 	return (
 		<section className='app-section'>
 			<h2>
@@ -61,53 +64,28 @@ export function Portfolio({data}) {
 
 			<div className='filter-container'>
         {filters.map(f => (
-          <div className='filter' key={`${f.label}_key`}>
-            <input
-              id={f.label}
-              type='checkbox'
-              value={f.label}
-              onChange={onFilter}
-              checked={f.isChecked}
-            />
-            <label htmlFor={f.label}>{f.label}</label>
-          </div>
+					<>
+						<div className='filter' key={`${f.label}_key`}>
+							<div id={f.label}>
+								{f.label}
+							</div>
+						</div>
+						<span>/</span>
+					</>
         ))}
       </div>
 
 			<div className='container'>
-        <IsoTopeGrid
-          gridLayout={cardsLayout} // gridlayout of cards
-          noOfCols={4} // number of columns show in one row
-          unitWidth={200} // card width of 1 unit
-          unitHeight={100} // card height of 1 unit
-          filters={filters} // list of selected filters
-        >
           {cardsLayout.map(card => (
-            <div key={card.id} className={card.filter[0]}>
+						<div key={card.id} className={`card ${card.filter}`}>
 							<img src={card.img} alt={`portfolio ${card.id}` }/>
-            </div>
+							<PortfolioInfo 
+												title={card.portfolioInfo.title}
+												text={card.portfolioInfo.text}
+												url={card.portfolioInfo.url} />
+						</div>
           ))}
-        </IsoTopeGrid>
       </div>
 		</section>
 	)
 }
-
-
-	//<div 
-	//				className='grid'
-  //				data-isotope='{ 'itemSelector': '.grid-item', 'masonry': { 'columnWidth': 200 } }'
-	//		>
-	//			<div className='grid-item'>
-	//				<img src={code} alt='portfolio' />
-	//			</div>
-	//			<div className='grid-item'>
-	//				<img src={ui} alt='portfolio' />
-	//			</div>
-	//			<div className='grid-item'>
-	//				<img src={code} alt='portfolio' />
-	//			</div>
-	//			<div className='grid-item'>
-	//				<img src={ui} alt='portfolio' />
-	//			</div>
-	//		</div>

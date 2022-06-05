@@ -1,9 +1,39 @@
 @import '../../../assets/styles/variables.scss';
 
-.grid-item {
-	width: 25%;
+.filter-container {
+	margin-top: 10px;
+	display: flex;
 }
 
-.grid-item--width2 {
-	width: 50%;
+.filter-container * {
+	margin-right: 3px;
+}
+
+div.filter-container span:last-of-type {
+	display: none;
+}
+
+.filter:hover {
+	cursor: pointer;
+}
+
+.filter:active {
+	color: $shamrock-color;
+}
+
+.container {
+	width: 100%;
+	display: flex;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	flex-wrap: wrap;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	max-width: fit-content;
+	max-height: fit-content;
+	margin-top: 10px;
+	margin-right: 20px;
 }
