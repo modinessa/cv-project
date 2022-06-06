@@ -1,18 +1,6 @@
 @import 'assets/styles/normalize.scss';
 @import 'assets/styles/variables';
 
-html {
-	min-width: 480px;
-}
-
-body {
-	font-family: Open Sans;
-	font-style: normal;
-	color: $oxford-blue-color
-}
-
-//TODO hide scrillbar
-
 #app-container {
 	overflow: hidden;
 	display: flex;
@@ -20,10 +8,6 @@ body {
 	padding: 0;
 	-ms-overflow-style: none;
 	scrollbar-width: none;
-}
-
-#app-container::-webkit-scrollbar {
-	display: none;
 }
 
 h1,

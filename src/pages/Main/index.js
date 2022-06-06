@@ -14,7 +14,8 @@ export function Main() {
 	}, [navigate]);
 
 	return (
-			<div className='main-screen'>
+		<div className='main-screen '>
+			<div className='main-screen-info-container'>
 				<PhotoBox 
 							name='Miu Miu'
 							title='Programmer. Creative. Innovator'
@@ -24,5 +25,6 @@ export function Main() {
 				<Button text='Know more'
 								clickHandler={clickHandler}/>
 			</div>
+		</div>
 	)
 }
