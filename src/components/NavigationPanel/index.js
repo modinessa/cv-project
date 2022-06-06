@@ -23,7 +23,7 @@ export function NavigationPanel() {
 		localStorage.setItem('navigationIsHide', !navigationIsHide);
 	}, [navigationIsHide, dispatch]);
 
-	const goBackkHandler = useCallback(() =>  {
+	const goBackHandler = useCallback(() =>  {
 		navigate('/');
 	}, [navigate]);
 
@@ -39,7 +39,7 @@ export function NavigationPanel() {
 					<Button
 							icon={<FontAwesomeIcon icon={faChevronLeft}/>}
 							text='Go back'
-							clickHandler={goBackkHandler}
+							clickHandler={goBackHandler}
 					/>
 				</div>
 			</div>

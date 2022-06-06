@@ -1,60 +1,25 @@
 import './portfolio.scss';
-import React from 'react';
- 
-import code from '../../assets/images/code.png';
-import ui from '../../assets/images/ui.png';
+import React, { useCallback, useState} from 'react';
+
 import { PortfolioInfo } from './PortfolioInfo';
-
-const filters = [
-	{label: 'All', isChecked: true},
-	{label: 'Code', isChecked: false},
-	{label: 'UI', isChecked: false}
-];
-
-const cardsLayout = [
-	 {
-    id: 1,
-		img: code,
-    filter:'code',
-		portfolioInfo: {
-			title: 'Some text',
-			text: 'Donec pede justo, fringilla vel, aliquet nec, vulel, aliquet nec, vulputate eget eget, arcu. In enim justo',
-			url: 'https://somesite.com'
-		}
-  },
-	 {
-    id: 2,
-		img: ui,
-    filter:'ui',
-		portfolioInfo: {
-			title: 'Title',
-			text: 'Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo',
-			url: 'https://somesite.com'
-		}
-  },
-	 {
-    id: 3,
-		img: code,
-    filter:'code',
-		portfolioInfo: {
-			title: 'Bla-bla',
-			text: 'Pede justo, fringilla vel, aliquet nec, vulputate eget,vel, aliquet nec, vulputate eget arcu. In enim justo',
-			url: 'https://somesite.com'
-		}
-  },
-	 {
-    id: 4,
-		img: ui,
-    filter:'ui',
-		portfolioInfo: {
-			title: 'Awesome text',
-			text: 'Donec pede jusaliquet necto, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo',
-			url: 'https://somesite.com'
-		}
-  },
-]
+import { filters, cardsDefault } from './constants';
 
 export function Portfolio() {
+
+	const [cards, setCards] = useState(cardsDefault);
+	const [checkedFilters, setcheckedFilters] = useState(filters);
+
+	const handelFilter = useCallback((filterCategory) => {
+		setCards(cardsDefault.filter(card =>
+			filterCategory.toLowerCase() === 'all' ? true :
+				card.category=== filterCategory.toLocaleLowerCase() ));
+
+		for (const filter of filters) {
+			filter.isChecked = filter.category === filterCategory;
+		}
+		setcheckedFilters(filters);
+			
+	}, [setCards]);
 
 	return (
 		<section className='app-section'>
@@ -63,10 +28,13 @@ export function Portfolio() {
 			</h2>
 
 			<div className='filter-container'>
-        {filters.map((f, i) => (
-					<div key={`${f.label}_key`} className='filter-item'>	
-						<div id={f.label} className='filter'>
-							{f.label}
+        {checkedFilters.map((f, i) => (
+					<div key={`${f.category}_key`} className='filter-item'>	
+						<div
+						   id={f.category}
+							 className={`filter ${f.isChecked && 'isChecked'}`}
+							 onClick={() => handelFilter(f.category)}>
+							{f.category}
 						</div>
 						{i < filters.length - 1 &&
 							<div className='separator'>/</div>
@@ -76,9 +44,9 @@ export function Portfolio() {
       </div>
 
 			<div className='container'>
-          {cardsLayout.map(card => {
+          {cards.map(card => {
 						return(
-							<div key={card.id} className={`card ${card.filter}`}>
+							<div key={card.id} className={`card ${card.category}`}>
 								<img src={card.img} alt={`portfolio ${card.id}` }/>
 								<PortfolioInfo 
 													title={card.portfolioInfo.title}
