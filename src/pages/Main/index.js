@@ -4,20 +4,22 @@ import { useNavigate } from 'react-router-dom';
 import { PhotoBox } from '../../components/PhotoBox';
 import { Button } from '../../components/Button';
 
+import avatar from '../../assets/images/avatar.jpeg';
+
 export function Main() {
 
 	const navigate = useNavigate();
 	const clickHandler = useCallback(() =>  {
 		navigate('/inner');
-	}, []);
+	}, [navigate]);
 
 	return (
 			<div className='main-screen'>
 				<PhotoBox 
-							name='John Doe'
+							name='Miu Miu'
 							title='Programmer. Creative. Innovator'
 							description='Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque'
-							avatar='http://avatars0.githubusercontent.com/u/246180?v=4'
+							avatar={avatar}
 						/>
 				<Button text='Know more'
 								clickHandler={clickHandler}/>

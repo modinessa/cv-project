@@ -16,8 +16,29 @@
 }
 
 .submit-btn {
+	background-color: $oxford-blue-color;
+	border: none;
+	border-radius: 5px;
+	color: $white-color;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 120%;
+	padding: 10px 20px;
+	text-align: center;
+	vertical-align: middle;
 	margin: 0;
 	width: 100px;
+}
+
+.submit-btn:hover {
+	background-color: $oxford-blue-color;
+	color: $shamrock-color;
+}
+
+input:disabled {
+	background-color: $raven-color;
+	color: $oxford-blue-color;
+	opacity: 50%;
 }
 
 .skill-ranges {

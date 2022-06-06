@@ -1,20 +1,19 @@
 import { createSlice} from '@reduxjs/toolkit';
 
-const editSkillsIsHide = localStorage.getItem('editSkillsIsHide') === 'true';
 const navigationIsHide = localStorage.getItem('navigationIsHide') === 'true';
 const savedSkills = localStorage.getItem('Skills');
-const defatulSkills = [
-	{skill: "HTML", range: 100},
-	{skill: "CSS", range: 75},
-	{skill: "jQuery", range: 25},
-	{skill: "Php", range: 20},
-	{skill: "Laravel 2 (Bla-bla-bla)", range: 10},
-];
+const defatulSkills = [];
+
+	//{skill: "HTML", range: 100},
+	//{skill: "CSS", range: 75},
+	//{skill: "jQuery", range: 25},
+	//{skill: "Php", range: 20},
+	//{skill: "Laravel 2 (Bla-bla-bla)", range: 10},
 
 export const cvSlise = createSlice({
 	name: "cv",
 	initialState: {
-		editSkillsIsHide,
+		editSkillsIsHide: true,
 		skills: savedSkills ? JSON.parse(savedSkills) : defatulSkills,
 		navigationIsHide,
 	},

@@ -1,8 +1,7 @@
 @import '../../assets/styles/variables.scss';
 
 
-.app-button,
-.submit-btn {
+.app-button {
 	background-color: $oxford-blue-color;
 	border-radius: 5px;
 	color: $white-color;
@@ -61,8 +60,7 @@ button:hover {
 	border-radius: 5px 5px 0px 0px;
 }
 
-div.app-section-container button:hover,
-.submit-btn:hover {
+div.app-section-container button:hover {
 	background-color: $oxford-blue-color;
 	color: $shamrock-color;
 }

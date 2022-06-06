@@ -10,6 +10,7 @@ import { PhotoBox } from '../../../components/PhotoBox';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faBars } from '@fortawesome/free-solid-svg-icons';
+import avatar from '../../../assets/images/avatar.jpeg';
 
 export function NavigationPanel() {
 
@@ -30,8 +31,8 @@ export function NavigationPanel() {
 		<aside className={`app-navigation-panel ${navigationIsHide ? 'nav-closed' : '' }`}>
 			<div className={`panel ${navigationIsHide ? 'menu-closed' : '' }`}>
 				<PhotoBox
-						name='John Doe'
-						avatar='http://avatars0.githubusercontent.com/u/246180?v=4'
+						name='Miu Miu'
+						avatar={avatar}
 				/>
 				<div className='nav-menu'>
 					<Navigation/>

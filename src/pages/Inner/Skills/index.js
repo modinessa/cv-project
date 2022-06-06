@@ -19,8 +19,8 @@ import { updateSkills } from './utils/updateSkills';
 
 const schema = yup.object({
   skill: yup.string().required(),
-  range: yup.number().positive().min(0).max(100).required(),
-});
+  range: yup.number().positive().min(10).max(100).required(),
+}).required();
 
 export function Skills() {
 
@@ -35,7 +35,6 @@ export function Skills() {
 
 	const clickHandler = useCallback(() => {
 		dispatch(setEditSkillsIsHide(!editSkillsIsHide));
-		localStorage.setItem('editSkillsIsHide', !editSkillsIsHide);
 	}, [editSkillsIsHide, dispatch]);
 
 	const onSubmit = useCallback((data) =>  {
@@ -69,7 +68,11 @@ export function Skills() {
 									register={register}
 									errors={errors}
 						/>
-						<input type="submit" className='submit-btn' value="Add skill" />
+						<input 
+									type="submit"
+									className='submit-btn'
+									value="Add skill"
+									disabled={!errors}/>
 					</form>
 				</div>
 			}
