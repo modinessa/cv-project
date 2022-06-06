@@ -1,9 +1,9 @@
 import './portfolio.scss';
 import React from 'react';
  
-import code from '../../../assets/images/code.png';
-import ui from '../../../assets/images/ui.png';
-import { PortfolioInfo } from './PortfolioInfo/PortfolioInfo';
+import code from '../../assets/images/code.png';
+import ui from '../../assets/images/ui.png';
+import { PortfolioInfo } from './PortfolioInfo';
 
 const filters = [
 	{label: 'All', isChecked: true},

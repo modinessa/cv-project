@@ -2,15 +2,15 @@ import './navigationPanel.scss';
 import React, { useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { setNavigationIsHide } from '../../../reducers';
+import { setNavigationIsHide } from '../../reducers';
 
 import { Navigation } from '../Navigation';
-import { Button } from '../../../components/Button';
-import { PhotoBox } from '../../../components/PhotoBox';
+import { Button } from '..//Button';
+import { PhotoBox } from '../PhotoBox';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faBars } from '@fortawesome/free-solid-svg-icons';
-import avatar from '../../../assets/images/avatar.jpeg';
+import avatar from '../../assets/images/avatar.jpeg';
 
 export function NavigationPanel() {
 

@@ -1,14 +1,14 @@
 import './skills.scss';
-import '../../../components/Button/button.scss';
+import '../../components/Button/button.scss';
 import React, { useCallback } from 'react';
 import { useSelector, useDispatch} from 'react-redux';
-import { setEditSkillsIsHide, setSkills } from '../../../reducers';
+import { setEditSkillsIsHide, setSkills } from '../../reducers';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
 
 import { useForm } from "react-hook-form";
-import { Button } from '../../../components/Button';
-import { Input } from '../../../components/Input';
+import { Button } from '../Button';
+import { Input } from '../Input';
 import { RangeBar } from './RangeBar';
 import { Ruler } from './Ruler';
 

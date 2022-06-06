@@ -2,21 +2,21 @@ import '../../App.scss';
 import React from 'react';
 
 import { Button } from '../../components/Button';
-import { NavigationPanel } from './NavigationPanel';
+import { NavigationPanel } from '../../components/NavigationPanel';
 import { Box } from '../../components/Box';
-import { TimeLine } from './TimeLine';
-import { Expertise } from './Expertise';
-import { Skills } from './Skills';
-import { Portfolio } from './Portfolio';
-import { Contacts } from './Contacts';
-import { Feedback } from './Feedback';
+import { TimeLine } from '../../components/TimeLine';
+import { Expertise } from '../../components/Expertise';
+import { Skills } from '../../components/Skills';
+import { Portfolio } from '../../components/Portfolio';
+import { Contacts } from '../../components/Contacts';
+import { Feedback } from '../../components/Feedback';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
-import { experience } from './Expertise/constants';
-import { education } from './TimeLine/constants';
-import { users } from './Feedback/constants';
+import { experience } from '../../components/Expertise/constants';
+import { education } from '../../components/TimeLine/constants';
+import { users } from '../../components/Feedback/constants';
 import { aboutMe } from '../../components/Box/constants';
 
 export function Inner() {
