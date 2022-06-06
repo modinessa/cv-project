@@ -63,15 +63,15 @@ export function Portfolio() {
 			</h2>
 
 			<div className='filter-container'>
-        {filters.map(f => (
-					<span key={`${f.label}_key`}>
-						<div className='filter'>
-							<div id={f.label}>
-								{f.label}
-							</div>
+        {filters.map((f, i) => (
+					<div key={`${f.label}_key`} className='filter-item'>	
+						<div id={f.label} className='filter'>
+							{f.label}
 						</div>
-						<span>/</span>
-					</span>
+						{i < filters.length - 1 &&
+							<div className='separator'>/</div>
+						}
+					</div>
         ))}
       </div>
 

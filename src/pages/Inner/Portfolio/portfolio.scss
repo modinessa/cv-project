@@ -9,9 +9,17 @@
 	margin-right: 3px;
 }
 
-div.filter-container span:last-of-type {
-	display: none;
+.filter-item {
+	display: flex;
 }
+
+//.filter-container .separator:last-of-type {
+//	display: none;
+//}
+
+//.separator:last-of-type {
+//	display: none;
+//}
 
 .filter:hover {
 	cursor: pointer;
