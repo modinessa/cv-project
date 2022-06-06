@@ -1,5 +1,8 @@
-import { createStore } from 'redux';
-import { appReducers } from '../reducers/index';
+import { configureStore } from "@reduxjs/toolkit";
+import cvReducer from '../reducers/index';
 
-export const store = createStore(appReducers);
-
+export const store = configureStore({
+	reducer: {
+		cv: cvReducer,
+	}
+});

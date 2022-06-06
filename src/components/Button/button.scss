@@ -43,7 +43,8 @@ div.app-section-container button:first-child {
 
 #skills button {
 	position: static;
-	min-width: fit-content;
+	text-align: justify;
+	min-width: 134px;
 	height: 40px;
 	border-radius: 5px;
 	font-size: 16px;
@@ -60,7 +61,8 @@ div.app-section-container button:first-child {
 	border-radius: 5px 5px 0px 0px;
 }
 
-div.app-section-container button:hover {
+div.app-section-container button:hover,
+.submit-btn:hover {
 	background-color: $oxford-blue-color;
 	color: $shamrock-color;
 }

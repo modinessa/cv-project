@@ -64,27 +64,29 @@ export function Portfolio() {
 
 			<div className='filter-container'>
         {filters.map(f => (
-					<>
-						<div className='filter' key={`${f.label}_key`}>
+					<span key={`${f.label}_key`}>
+						<div className='filter'>
 							<div id={f.label}>
 								{f.label}
 							</div>
 						</div>
 						<span>/</span>
-					</>
+					</span>
         ))}
       </div>
 
 			<div className='container'>
-          {cardsLayout.map(card => (
-						<div key={card.id} className={`card ${card.filter}`}>
-							<img src={card.img} alt={`portfolio ${card.id}` }/>
-							<PortfolioInfo 
-												title={card.portfolioInfo.title}
-												text={card.portfolioInfo.text}
-												url={card.portfolioInfo.url} />
-						</div>
-          ))}
+          {cardsLayout.map(card => {
+						return(
+							<div key={card.id} className={`card ${card.filter}`}>
+								<img src={card.img} alt={`portfolio ${card.id}` }/>
+								<PortfolioInfo 
+													title={card.portfolioInfo.title}
+													text={card.portfolioInfo.text}
+													url={card.portfolioInfo.url} />
+							</div>
+						)
+					})}
       </div>
 		</section>
 	)
