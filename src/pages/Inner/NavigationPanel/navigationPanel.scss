@@ -1,6 +1,20 @@
 @import '../../../assets/styles/variables.scss';
 
 .app-navigation-panel {
+	background-color: $white-color;
+	display: flex;
+	min-width: 280px;
+}
+
+.nav-closed {
+	min-width: 30px;
+}
+
+div.menu-closed {
+	display: none;
+}
+
+.panel {
 	background-color: $oxford-blue-color;
 	display: flex;
 	align-items: center;
@@ -17,7 +31,6 @@
 	flex-direction: column;
 	justify-content: space-between;
 }
-
 
 @media (max-width: 600px) {
 	.app-navigation-panel {

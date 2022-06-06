@@ -1,7 +1,7 @@
 import { createSlice} from '@reduxjs/toolkit';
 
 const editSkillsIsHide = localStorage.getItem('editSkillsIsHide') === 'true';
-
+const navigationIsHide = localStorage.getItem('navigationIsHide') === 'true';
 const savedSkills = localStorage.getItem('Skills');
 const defatulSkills = [
 	{skill: "HTML", range: 100},
@@ -16,7 +16,7 @@ export const cvSlise = createSlice({
 	initialState: {
 		editSkillsIsHide,
 		skills: savedSkills ? JSON.parse(savedSkills) : defatulSkills,
-		navigationIsHide: false,
+		navigationIsHide,
 	},
 	reducers: {
 		setEditSkillsIsHide: (state, {payload}) => {

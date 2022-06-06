@@ -1,8 +1,8 @@
 import './skills.scss';
 import '../../../components/Button/button.scss';
-import React, { useCallback, useEffect } from 'react';
+import React, { useCallback } from 'react';
 import { useSelector, useDispatch} from 'react-redux';
-import {	setEditSkillsIsHide, setSkills } from '../../../reducers';
+import { setEditSkillsIsHide, setSkills } from '../../../reducers';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
 
