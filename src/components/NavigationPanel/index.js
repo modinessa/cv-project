@@ -28,8 +28,8 @@ export function NavigationPanel() {
 	}, [navigate]);
 
 	return (
-		<aside className={`app-navigation-panel ${navigationIsHide ? 'nav-closed' : '' }`}>
-			<div className={`panel ${navigationIsHide ? 'menu-closed' : '' }`}>
+		<aside className={`app-navigation-panel ${navigationIsHide && 'nav-closed' }`}>
+			<div className={`panel ${navigationIsHide && 'menu-closed'}`}>
 				<PhotoBox
 						name='Miu Miu'
 						avatar={avatar}

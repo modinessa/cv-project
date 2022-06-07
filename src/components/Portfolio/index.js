@@ -46,12 +46,19 @@ export function Portfolio() {
 			<div className='container'>
           {cards.map(card => {
 						return(
-							<div key={card.id} className={`card ${card.category}`}>
-								<img src={card.img} alt={`portfolio ${card.id}` }/>
+							<div
+									key={card.id}
+									className={`card ${card.category}`}
+									style={{ 
+										background: `url(${card.img})`
+									}}
+							>
+								<div className='card-info-container'>
 								<PortfolioInfo 
 													title={card.portfolioInfo.title}
 													text={card.portfolioInfo.text}
 													url={card.portfolioInfo.url} />
+							</div>
 							</div>
 						)
 					})}

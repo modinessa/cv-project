@@ -6,7 +6,11 @@
 }
 
 .filter-container * {
-	margin-right: 3px;
+	margin-right: 2px;
+}
+
+.separator {
+	margin-left: 2px;
 }
 
 .filter-item {
@@ -34,10 +38,22 @@
 }
 
 .card {
+	height: 190px;
+	width: 308px;
+	overflow: hidden;
 	display: flex;
 	flex-direction: column;
 	max-width: fit-content;
 	max-height: fit-content;
 	margin-top: 10px;
 	margin-right: 20px;
+}
+
+.card-info-container {
+	transition: all 0.6s ease;
+	padding-top: 192px;
+}
+
+.card-info-container:hover {
+	padding-top: 0;
 }

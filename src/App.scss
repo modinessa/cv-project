@@ -53,7 +53,6 @@ p {
 
 .app-section {
 	margin: 20px 0px 10px 20px;
-	/*TODO check figma layout with margin left*/
 	padding: 0px 30px 0px 30px;
 	display: flex;
 	flex-direction: column;
@@ -62,6 +61,7 @@ p {
 @media screen and (min-device-width: 481px) and (max-width: 600px) {
 	html {
 		min-width: 480px;
+		min-height: 100%;
 	}
 
 	#app-container {
