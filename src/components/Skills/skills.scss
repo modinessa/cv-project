@@ -26,7 +26,7 @@
 	padding: 10px 20px;
 	text-align: center;
 	vertical-align: middle;
-	margin: 0;
+	margin: 10px 0 0 10px;
 	width: 100px;
 }
 
@@ -35,10 +35,9 @@
 	color: $shamrock-color;
 }
 
-input:disabled {
-	background-color: $raven-color;
-	color: $oxford-blue-color;
-	opacity: 50%;
+.submit-btn:disabled {
+	background-color: $oxford-blue-color;
+	color: $raven-color;
 }
 
 .skill-ranges {
