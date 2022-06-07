@@ -15,9 +15,6 @@ export function Ruler() {
 				<div className='item-2'>
 					Proficient
 				</div>
-				<div className='item-middle'>
-					bbghgggbbb  
-				</div>
 				<div className='item-3'>
 					Expert
 				</div>

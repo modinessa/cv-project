@@ -45,3 +45,21 @@
 	display: flex;
 	flex-direction: column;
 }
+
+.ruler-labels {
+	position: relative;
+}
+
+.item-2 {
+	position: absolute;
+	left: 25%;
+	text-align: center;
+	transform: translateX(-50%);
+}
+
+.item-3 {
+	position: absolute;
+	left: 75%;
+	text-align: center;
+	transform: translateX(-50%);
+}
