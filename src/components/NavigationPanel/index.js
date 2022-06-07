@@ -40,6 +40,7 @@ export function NavigationPanel() {
 							icon={<FontAwesomeIcon icon={faChevronLeft}/>}
 							text='Go back'
 							clickHandler={goBackHandler}
+							type='link-transparent'
 					/>
 				</div>
 			</div>
@@ -47,6 +48,7 @@ export function NavigationPanel() {
 				<Button 
 							icon={<FontAwesomeIcon icon={faBars}/>}
 							clickHandler={toggleMenu}
+							type='square-left'
 				/>
 			</span>
 		</aside>

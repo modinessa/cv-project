@@ -4,6 +4,7 @@
 	background-color: $white-color;
 	display: flex;
 	min-width: 280px;
+	padding-top: 20px;
 }
 
 .nav-closed {
@@ -20,6 +21,7 @@ div.menu-closed {
 	align-items: center;
 	flex-direction: column;
 	min-width: 250px;
+	margin-top: -20px;
 	padding-top: 20px;
 }
 
@@ -33,7 +35,17 @@ div.menu-closed {
 }
 
 @media (max-width: 600px) {
+
 	.app-navigation-panel {
+		min-width: 84px;
+	}
+
+	.nav-closed {
+		min-width: 30px;
+	}
+
+	.panel {
 		min-width: 54px;
 	}
+
 }

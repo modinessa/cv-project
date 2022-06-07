@@ -23,7 +23,8 @@ export function Main() {
 							avatar={avatar}
 						/>
 				<Button text='Know more'
-								clickHandler={clickHandler}/>
+								clickHandler={clickHandler}
+								type='link-button'/>
 			</div>
 		</div>
 	)

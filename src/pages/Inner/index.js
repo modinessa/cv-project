@@ -1,4 +1,4 @@
-import '../../App.scss';
+import './inner.scss';
 import React from 'react';
 
 import { Button } from '../../components/Button';
@@ -35,6 +35,7 @@ export function Inner() {
 				<Button 
 							icon={<FontAwesomeIcon icon={faChevronUp}/>}
 							clickHandler={() => console.log('"goUp" is clicked')}
+							type='square-bottom'
 				/>
 			</div>
 		</main>

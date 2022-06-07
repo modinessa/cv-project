@@ -17,61 +17,62 @@ button:hover {
 	background-color: $shamrock-color;
 }
 
-.main-screen button {
-	margin-top: 10px;
-}
-
-.app-navigation-panel button {
+.link-transparent {
 	background-color: transparent;
 	margin-bottom: 30px;
 }
 
-.app-navigation-panel button:hover {
-	color: $raven-color
+.link-transparent:hover {
+	background-color: transparent;
+	color: $shamrock-color
 }
 
-#menu-toggle button {
+.square-top,
+.square-right,
+.square-bottom,
+.square-left {
 	background-color: $oxford-blue-color;
 	width: 30px;
 	height: 30px;
 	padding: 0;
-	margin-top: 20px;
-	border-radius: 0px 5px 5px 0px;
 }
 
-
-#skills button {
-	position: static;
-	text-align: justify;
-	min-width: 134px;
-	height: 40px;
-	border-radius: 5px;
-	font-size: 16px;
-	padding: 10px 20px;
-}
-
-.app-section-container button:last-child {
-	width: 30px;
-	height: 30px;
-	padding: 0;
-	position: fixed;
-	bottom: 0;
-	right: 36px;
-	border-radius: 5px 5px 0px 0px;
-}
-
-div.app-section-container button:hover {
+.square-top:hover,
+.square-right:hover,
+.square-bottom:hover,
+.square-left:hover {
 	background-color: $oxford-blue-color;
 	color: $shamrock-color;
 }
 
+.square-top {
+	border-radius: 0px 0px 5px 5px;
+}
+
+.square-right {
+	border-radius: 5px 0px 0px 5px;
+}
+
+.square-bottom {
+	border-radius: 5px 5px 0px 0px;
+}
+
+.square-left {
+	border-radius: 0px 5px 5px 0px;
+}
+
 @media (max-width: 600px) {
-	.app-navigation-panel .text {
-		display: none;
+
+	.link-transparent {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 40px;
+		height: 30px;
+		background-color: $shamrock-color;
 	}
 
-	#menu-toggle button {
-		position: fixed;
-		left: 54px;
+	.link-transparent .text {
+		display: none;
 	}
 }
