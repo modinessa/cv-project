@@ -1,6 +1,6 @@
 import './navigation.scss';
 import React from 'react';
-import { Link, scroller } from 'react-scroll';
+import { Link } from 'react-scroll';
 //import { NavHashLink as Link } from 'react-router-hash-link';
 
 

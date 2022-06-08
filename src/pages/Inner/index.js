@@ -1,5 +1,5 @@
 import './inner.scss';
-import React, { useCallback } from 'react';
+import React, { useCallback, useState, useEffect } from 'react';
 
 import { Button } from '../../components/Button';
 import { NavigationPanel } from '../../components/NavigationPanel';
@@ -15,15 +15,27 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
 import { experience } from '../../components/Expertise/constants';
-import { education } from '../../components/TimeLine/constants';
+//import { education } from '../../components/TimeLine/constants';
 import { users } from '../../components/Feedback/constants';
 import { aboutMe } from '../../components/Box/constants';
+import { getEducations } from '../../utils/serverRequests';
+
+//import server from '../../services/server';
+//server();
 
 export function Inner() {
 
+
+	const [educations, setEducations] = useState([]);
+
+	useEffect(() => {
+		getEducations()
+		.then((response) => response.json())
+    .then((json) => setEducations(json))
+	}, []);
+
 	const scrollUp = useCallback(() => {
 		console.log('scroll');
-		
 		window.scrollTo(300, {
 			behavior: 'smooth'
 		})
@@ -37,7 +49,7 @@ export function Inner() {
 					<Box title='About me' content={aboutMe}/>
 				</span>
 				<span id='education'>
-					<TimeLine data={education} />
+					<TimeLine data={educations} />
 				</span>
 				<span id='experience'>
 					<Expertise data={experience} />
