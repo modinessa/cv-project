@@ -34,7 +34,7 @@ export function  makeServer() {
 						"text": "Labore esse tempor nisi non mollit enim elit ullamco veniam elit duis nostrud. Enim pariatur ullamco dolor eu sunt ad velit aute eiusbore eiusmod eiusmod labore amet eiusmod. In duis eiusmod commodo duis. Exercitation Lorem sint do aliquip veniam duis elit quis culpa irure quis nulla. Reprehenderit fugiat amet sint commodo ex."
 					},
 				]
-			}, {timing: 5000})
+			}, {timing: 10000})
 		
 			this.get("/skills", () => [])
 			
