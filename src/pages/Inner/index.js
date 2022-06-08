@@ -1,5 +1,6 @@
 import './inner.scss';
 import React, { useCallback, useState, useEffect } from 'react';
+import { useSelector } from 'react-redux';
 
 import { Button } from '../../components/Button';
 import { NavigationPanel } from '../../components/NavigationPanel';
@@ -15,17 +16,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
 import { experience } from '../../components/Expertise/constants';
-//import { education } from '../../components/TimeLine/constants';
 import { users } from '../../components/Feedback/constants';
 import { aboutMe } from '../../components/Box/constants';
 import { getEducations } from '../../utils/serverRequests';
 
-//import server from '../../services/server';
-//server();
-
 export function Inner() {
 
-
+	const { navigationIsHide } = useSelector((state) => state.cv);
 	const [educations, setEducations] = useState([]);
 
 	useEffect(() => {
@@ -35,16 +32,16 @@ export function Inner() {
 	}, []);
 
 	const scrollUp = useCallback(() => {
-		console.log('scroll');
-		window.scrollTo(300, {
+		window.scrollTo({
+			top: 0,
 			behavior: 'smooth'
 		})
-	}, [])
+	}, []);
 
 	return (
 		<main id='app-container'>
 			<NavigationPanel />
-			<div className='app-section-container'>
+			<div className={`app-section-container ${navigationIsHide && 'nav-is-hide'}`}>
 				<span id='about-me'>
 					<Box title='About me' content={aboutMe}/>
 				</span>

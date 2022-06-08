@@ -7,6 +7,10 @@
 	margin-top: 30px;
 }
 
+a.active {
+	color: $shamrock-color;
+}
+
 .app-navigation__nav-list-item {
 	box-sizing: border-box;
 	padding-left: 20px;
@@ -29,6 +33,10 @@
 }
 
 @media (max-width: 600px) {
+	.app-navigation__nav-list-item {
+		width: 54px;
+	}
+
 	.item-name {
 		display: none;
 	}

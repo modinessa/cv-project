@@ -1,8 +1,6 @@
 import './navigation.scss';
 import React from 'react';
 import { Link } from 'react-scroll';
-//import { NavHashLink as Link } from 'react-router-hash-link';
-
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
@@ -20,7 +18,7 @@ export function Navigation() {
 		<div className='app-navigation'>	
 				<Link 
 						smooth spy to='about-me'
-						activeClass='ctive'
+						activeClass='active'
 						className='app-navigation__nav-list-item'
 				>
 					<FontAwesomeIcon className='fa-icon-nav' icon={faUser}/>

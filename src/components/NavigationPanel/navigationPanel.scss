@@ -5,6 +5,9 @@
 	display: flex;
 	min-width: 280px;
 	padding-top: 20px;
+	height: 100vh;
+	position: fixed;
+
 }
 
 .nav-closed {
@@ -40,12 +43,12 @@ div.menu-closed {
 		min-width: 84px;
 	}
 
-	.nav-closed {
-		min-width: 30px;
-	}
-
 	.panel {
 		min-width: 54px;
+	}
+
+	.nav-closed {
+		min-width: 30px;
 	}
 
 }
