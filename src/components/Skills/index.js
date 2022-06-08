@@ -24,7 +24,7 @@ const schema = yup.object({
 			.typeError('Skill range must be a number from 10 to 100')
 			.required('Skill range is a required field')
 			.min(10, 'Skill range must be greater or equal to 10')
-			.max(100, 'Skill range must be less or equal to 10'),
+			.max(100, 'Skill range must be less or equal to 100'),
 });
 
 export function Skills() {
@@ -50,7 +50,7 @@ export function Skills() {
 		dispatch(setSkills(updatedSkills));
 		localStorage.setItem('Skills', JSON.stringify(updatedSkills));
 		reset()
-	}, [skills, dispatch]);
+	}, [skills, dispatch, reset]);
 
 	return (
 		<section id='skills' className='app-section'>

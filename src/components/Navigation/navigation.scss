@@ -4,25 +4,28 @@
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	margin-top: 50px;
+	margin-top: 30px;
 }
 
 .app-navigation__nav-list-item {
+	box-sizing: border-box;
+	padding-left: 20px;
 	text-decoration: none;
+	display: flex;
+	align-items: center;
 	color: $raven-color;
-	display: block;
 	width: 100%;
 	height: 60px;
 }
 
 .app-navigation__nav-list-item:hover {
 	color: $shamrock-color;
+	cursor: default;
 }
 
 .fa-icon-nav {
 	width: 14px;
-	margin-left: 20px;
-	margin-right: 20px;
+	margin-right: 50px;
 }
 
 @media (max-width: 600px) {

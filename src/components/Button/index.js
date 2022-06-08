@@ -1,6 +1,5 @@
 import './button.scss'
 import React from 'react';
-import { Link } from "react-router-dom";
 
 export function Button({text, icon, clickHandler, type}) {
 

@@ -1,5 +1,5 @@
 import './inner.scss';
-import React from 'react';
+import React, { useCallback } from 'react';
 
 import { Button } from '../../components/Button';
 import { NavigationPanel } from '../../components/NavigationPanel';
@@ -21,20 +21,42 @@ import { aboutMe } from '../../components/Box/constants';
 
 export function Inner() {
 
+	const scrollUp = useCallback(() => {
+		console.log('scroll');
+		
+		window.scrollTo(300, {
+			behavior: 'smooth'
+		})
+	}, [])
+
 	return (
 		<main id='app-container'>
 			<NavigationPanel />
 			<div className='app-section-container'>
-				<Box title='About me' content={aboutMe}/>
-				<TimeLine data={education} />
-				<Expertise data={experience} />
-				<Skills />
-				<Portfolio />
-				<Contacts />
-				<Feedback users={users} />
+				<span id='about-me'>
+					<Box title='About me' content={aboutMe}/>
+				</span>
+				<span id='education'>
+					<TimeLine data={education} />
+				</span>
+				<span id='experience'>
+					<Expertise data={experience} />
+					</span>
+				<span id='skills'>
+					<Skills />
+					</span>
+				<span id='portfolio'>
+					<Portfolio />
+					</span>
+				<span id='contacts'>
+					<Contacts />
+				</span>
+				<span id='feedbacks'>
+					<Feedback users={users} />
+				</span>
 				<Button 
 							icon={<FontAwesomeIcon icon={faChevronUp}/>}
-							clickHandler={() => console.log('"goUp" is clicked')}
+							clickHandler={scrollUp}
 							type='square-bottom'
 				/>
 			</div>

@@ -42,7 +42,6 @@ button:hover {
 .square-bottom:hover,
 .square-left:hover {
 	background-color: $oxford-blue-color;
-	color: $shamrock-color;
 }
 
 .square-top {
@@ -62,7 +61,6 @@ button:hover {
 }
 
 @media (max-width: 600px) {
-
 	.link-transparent {
 		display: flex;
 		justify-content: center;
