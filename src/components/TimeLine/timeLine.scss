@@ -14,7 +14,6 @@
 	display: none;
 }
 
-
 .time-line-item {
 	display: flex;
 	margin-bottom: 10px;
@@ -50,4 +49,8 @@
 .info {
 	background-color: $gallery-color;
 	padding-left: 15px;
+}
+
+.responce-error {
+	color: $error-color;
 }

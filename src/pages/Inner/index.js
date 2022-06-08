@@ -24,11 +24,15 @@ export function Inner() {
 
 	const { navigationIsHide } = useSelector((state) => state.cv);
 	const [educations, setEducations] = useState([]);
+	const [requestError, setRequestError] = useState([]);
 
 	useEffect(() => {
 		getEducations()
 		.then((response) => response.json())
     .then((json) => setEducations(json))
+		.catch((error) => {
+			setRequestError(error)
+		})
 	}, []);
 
 	const scrollUp = useCallback(() => {
@@ -46,7 +50,7 @@ export function Inner() {
 					<Box title='About me' content={aboutMe}/>
 				</span>
 				<span id='education'>
-					<TimeLine data={educations} /> 
+					<TimeLine data={educations} error={requestError} /> 
 				</span>
 				<span id='experience'>
 					<Expertise data={experience} />
