@@ -1,6 +1,9 @@
 @import '../../assets/styles/variables.scss';
 
 .time-line-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	padding: 5px 0 0 10px;
 	max-height: 330px;
 	max-height: 330px;
@@ -43,7 +46,6 @@
 	border-top: 10px solid transparent;
 	border-right: 13px solid $gallery-color;
 	border-bottom: 10px solid transparent;
-
 }
 
 .info {
@@ -52,5 +54,6 @@
 }
 
 .responce-error {
+	margin-top: 150px;
 	color: $error-color;
 }
