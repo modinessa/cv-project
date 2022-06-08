@@ -1,5 +1,5 @@
 import './inner.scss';
-import React, { useCallback, useState, useEffect } from 'react';
+import React, { useCallback, useState, useEffect, useRef } from 'react';
 
 import { Button } from '../../components/Button';
 import { NavigationPanel } from '../../components/NavigationPanel';
@@ -34,9 +34,11 @@ export function Inner() {
     .then((json) => setEducations(json))
 	}, []);
 
+	const appSectionContainer = useRef(null);
+
 	const scrollUp = useCallback(() => {
-		console.log('scroll');
-		window.scrollTo(300, {
+		appSectionContainer.current.scrollTo({
+			top: 0,
 			behavior: 'smooth'
 		})
 	}, [])
@@ -44,7 +46,7 @@ export function Inner() {
 	return (
 		<main id='app-container'>
 			<NavigationPanel />
-			<div className='app-section-container'>
+			<div ref={appSectionContainer} className='app-section-container'>
 				<span id='about-me'>
 					<Box title='About me' content={aboutMe}/>
 				</span>

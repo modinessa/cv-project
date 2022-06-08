@@ -1,5 +1,5 @@
-import code from '../../assets/images/code.png';
-import ui from '../../assets/images/ui.png';
+import code from '../../assets/images/Code.png';
+import ui from '../../assets/images/UI.png';
 
 export const filters = [
 	{category: 'All', isChecked: true},
