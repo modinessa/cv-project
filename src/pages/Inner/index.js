@@ -1,6 +1,10 @@
 import './inner.scss';
+<<<<<<< HEAD
 import React, { useCallback, useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
+=======
+import React, { useCallback, useState, useEffect, useRef } from 'react';
+>>>>>>> a75c92b14e5e0c0688844c0708eb5577daabee8a
 
 import { Button } from '../../components/Button';
 import { NavigationPanel } from '../../components/NavigationPanel';
@@ -31,8 +35,14 @@ export function Inner() {
     .then((json) => setEducations(json))
 	}, []);
 
+	const appSectionContainer = useRef(null);
+
 	const scrollUp = useCallback(() => {
+<<<<<<< HEAD
 		window.scrollTo({
+=======
+		appSectionContainer.current.scrollTo({
+>>>>>>> a75c92b14e5e0c0688844c0708eb5577daabee8a
 			top: 0,
 			behavior: 'smooth'
 		})
@@ -41,7 +51,11 @@ export function Inner() {
 	return (
 		<main id='app-container'>
 			<NavigationPanel />
+<<<<<<< HEAD
 			<div className={`app-section-container ${navigationIsHide && 'nav-is-hide'}`}>
+=======
+			<div ref={appSectionContainer} className='app-section-container'>
+>>>>>>> a75c92b14e5e0c0688844c0708eb5577daabee8a
 				<span id='about-me'>
 					<Box title='About me' content={aboutMe}/>
 				</span>
