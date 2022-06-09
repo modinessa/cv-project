@@ -34,10 +34,8 @@ export function Skills() {
 	const dispatch = useDispatch();
 
 	useEffect(() => {
-		console.log(dispatch(fetchSkills()));
 		dispatch(fetchSkills())
-		console.log(skills)
-	}, [dispatch]);
+	}, [dispatch,skills]);
 
 	const {
 		reset,

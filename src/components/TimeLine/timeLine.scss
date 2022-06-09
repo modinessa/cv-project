@@ -6,7 +6,7 @@
 	align-items: center;
 	padding: 5px 0 0 10px;
 	max-height: 330px;
-	max-height: 330px;
+	width: calc(100% - 15px);
 	height: 330px;
 	overflow: scroll;
 	-ms-overflow-style: none;
@@ -46,11 +46,6 @@
 	border-top: 10px solid transparent;
 	border-right: 13px solid $gallery-color;
 	border-bottom: 10px solid transparent;
-}
-
-.info {
-	background-color: $gallery-color;
-	padding-left: 15px;
 }
 
 .responce-error {
