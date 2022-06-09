@@ -1,6 +1,6 @@
 import './inner.scss';
-import React, { useCallback, useState, useEffect } from 'react';
-import { useSelector } from 'react-redux';
+import React, { useCallback, useEffect } from 'react';
+import { useSelector, useDispatch} from 'react-redux';
 
 import { Button } from '../../components/Button';
 import { NavigationPanel } from '../../components/NavigationPanel';
@@ -18,22 +18,19 @@ import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { experience } from '../../components/Expertise/constants';
 import { users } from '../../components/Feedback/constants';
 import { aboutMe } from '../../components/Box/constants';
-import { getEducations } from '../../utils/serverRequests';
+import { fetchEducations } from '../../reducers/educations';
 
 export function Inner() {
 
 	const { navigationIsHide } = useSelector((state) => state.cv);
-	const [educations, setEducations] = useState([]);
-	const [requestError, setRequestError] = useState([]);
+	const { educations, errors } = useSelector((state) => state.educations);
+
+	const dispatch = useDispatch();
 
 	useEffect(() => {
-		getEducations()
-		.then((response) => response.json())
-    .then((json) => setEducations(json))
-		.catch((error) => {
-			setRequestError(error)
-		})
-	}, []);
+		dispatch(fetchEducations());
+		// eslint-disable-next-line
+	}, [])
 
 	const scrollUp = useCallback(() => {
 		window.scrollTo({
@@ -50,7 +47,7 @@ export function Inner() {
 					<Box title='About me' content={aboutMe}/>
 				</span>
 				<span id='education'>
-					<TimeLine data={educations} error={requestError} /> 
+					<TimeLine data={educations} error={errors} /> 
 				</span>
 				<span id='experience'>
 					<Expertise data={experience} />

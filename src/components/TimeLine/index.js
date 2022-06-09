@@ -12,7 +12,7 @@ export function TimeLine({data, error}) {
 				Education
 			</h2>
 			<div className='time-line-container'>
-				{ (data.length < 1) && (error.length < 1)
+				{ (data.length < 1) && (!error)
 					? <Loading />
 					: data.length > 0 ?
 						<> 

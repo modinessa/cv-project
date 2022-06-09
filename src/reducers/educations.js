@@ -13,11 +13,18 @@ export const educationsSlise = createSlice({
 	name: "educations",
 	initialState: {
 		educations: [],
+		errors: false
 	},
 	extraReducers: {
-      [getEducations.fulfilled]: (state, {payload}) => {
+      [fetchEducations.fulfilled]: (state, {payload}) => {
         state.educations = payload;
-      }
+				state.errors = false;
+      },
+      [fetchEducations.rejected]: (state) => {
+        state.educations = [];
+				state.errors = true;
+      },
+			
 	},
 	reducers: {
 		setEducations: (state, {payload}) => {

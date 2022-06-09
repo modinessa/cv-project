@@ -35,7 +35,7 @@ export function Skills() {
 
 	useEffect(() => {
 		dispatch(fetchSkills())
-// eslint-disable-next-line
+		// eslint-disable-next-line
 	}, []);
 
 	const {
