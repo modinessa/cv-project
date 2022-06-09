@@ -1,5 +1,19 @@
 @import './assets/styles/variables.scss';
 
+@font-face {
+	font-family: "OpenSansBold";
+	src: local("OpenSansBold"),
+		url("./assets/fonts/OpenSans/OpenSans-Bold.ttf") format("truetype");
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "OpenSansReg";
+	src: local("OpenSansReg"),
+		url("./assets/fonts/OpenSans/OpenSans-Regular.ttf") format("truetype");
+	font-weight: normal;
+}
+
 html {
 	min-width: 480px;
 	width: 100%;
@@ -13,8 +27,7 @@ body {
 	margin: 0;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	font-family: Open Sans;
-	font-style: normal;
+	font-family: "OpenSansReg";
 	color: $oxford-blue-color
 }
 
