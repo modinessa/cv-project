@@ -1,5 +1,9 @@
 import { createServer } from "miragejs";
 
+const skills = [
+	{skill: 'buuu', range: 50}
+];
+
 export function  makeServer() {
 	createServer({
 
@@ -36,12 +40,16 @@ export function  makeServer() {
 				]
 			}, {timing: 10000})
 		
-			this.get("/skills", () => [])
+			this.get("/skills", () => {
+				return [
+					{skill: 'buuu', range: 50}
+				];
+			})
 			
 			this.post("/skills", (request) => {
 				let skill = JSON.parse(request.requestBody);
-
-				return skill;
+				skills.push(skill);
+				console.log("skills" + skills)
 
 			}, {timing:3000})
 

@@ -1,8 +1,8 @@
 import './skills.scss';
 import '../../components/Button/button.scss';
-import React, { useCallback } from 'react';
+import React, { useCallback, useEffect } from 'react';
 import { useSelector, useDispatch} from 'react-redux';
-import { setEditSkillsIsHide, setSkills } from '../../reducers';
+import { fetchSkills, setEditSkillsIsHide, setSkills } from '../../reducers';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 
@@ -16,6 +16,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPencil } from '@fortawesome/free-solid-svg-icons';
 
 import { updateSkills } from './utils/updateSkills';
+import { postSkills } from '../../utils/serverRequests';
 
 const schema = yup.object({
   skill: yup.string('Enter skill')
@@ -31,6 +32,12 @@ export function Skills() {
 
 	const {skills, editSkillsIsHide} = useSelector((state) => state.cv);
 	const dispatch = useDispatch();
+
+	useEffect(() => {
+		console.log(dispatch(fetchSkills()));
+		dispatch(fetchSkills())
+		console.log(skills)
+	}, [dispatch]);
 
 	const {
 		reset,
@@ -48,7 +55,7 @@ export function Skills() {
 	const onSubmit = useCallback((data) =>  {
 		let updatedSkills = updateSkills(data, skills);
 		dispatch(setSkills(updatedSkills));
-		localStorage.setItem('Skills', JSON.stringify(updatedSkills));
+		postSkills();
 		reset()
 	}, [skills, dispatch, reset]);
 

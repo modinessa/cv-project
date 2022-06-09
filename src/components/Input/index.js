@@ -2,7 +2,6 @@ import './input.scss'
 import React from "react";
 
 export function Input({ register, name, title, errors}) {
-	console.log(errors);
 	let message = "";
 
 	if (errors.hasOwnProperty('message')) {
