@@ -55,6 +55,7 @@ export function Skills() {
 		let updatedSkills = updateSkills(data, skills);
 		dispatch(setSkills(updatedSkills));
 		postSkills(updatedSkills);
+		localStorage.setItem('Skills', JSON.stringify(updatedSkills));
 		reset()
 	}, [skills, dispatch, reset]);
 

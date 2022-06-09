@@ -12,9 +12,8 @@ export function getSkills() {
   });
 }
 
-export function postSkills(data) {
+export function postSkills() {
   return fetch(`${url}/skills`, {
     method: 'POST',
-		body: JSON.stringify(data)
   });
 }
