@@ -2,7 +2,7 @@ import './skills.scss';
 import '../../components/Button/button.scss';
 import React, { useCallback, useEffect } from 'react';
 import { useSelector, useDispatch} from 'react-redux';
-import { fetchSkills, setEditSkillsIsHide, setSkills } from '../../reducers';
+import { fetchSkills, setEditSkillsIsHide, setSkills } from '../../reducers/skills';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 
@@ -35,7 +35,8 @@ export function Skills() {
 
 	useEffect(() => {
 		dispatch(fetchSkills())
-	}, [dispatch,skills]);
+// eslint-disable-next-line
+	}, []);
 
 	const {
 		reset,
@@ -53,7 +54,7 @@ export function Skills() {
 	const onSubmit = useCallback((data) =>  {
 		let updatedSkills = updateSkills(data, skills);
 		dispatch(setSkills(updatedSkills));
-		postSkills();
+		postSkills(updatedSkills);
 		reset()
 	}, [skills, dispatch, reset]);
 

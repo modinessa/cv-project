@@ -2,7 +2,7 @@ import './navigationPanel.scss';
 import React, { useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { setNavigationIsHide } from '../../reducers';
+import { setNavigationIsHide } from '../../reducers/skills';
 
 import { Navigation } from '../Navigation';
 import { Button } from '..//Button';

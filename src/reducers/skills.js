@@ -11,7 +11,6 @@ export const fetchSkills = createAsyncThunk(
  }
 );
 
-
 export const cvSlise = createSlice({
 	name: "cv",
 	initialState: {
