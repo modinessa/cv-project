@@ -43,8 +43,7 @@
 	"scripts": {
 		"start": "react-scripts start",
 		"build": "react-scripts build",
-		"test": "cross-env CI=true react-scripts test --env=jsdom",
-		"testes": "react-scripts test --coverage --watchAll=false",
+		"test": "react-scripts test --coverage --watchAll=false",
 		"test:coverage": "npm test -- --coverage",
 		"eject": "react-scripts eject"
 	},
