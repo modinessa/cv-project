@@ -45,13 +45,14 @@
 		"postinstall": "rm -rf .git/hooks/pre-push && node node_modules/husky/bin/install.js && rm -rf .git/hooks/pre-commit",
 		"start": "react-scripts start",
 		"build": "react-scripts build",
-		"test": "CI=true react-scripts test --coverage --watchAll=false",
+		"test": "cross-env CI=true react-scripts test --env=jsdom",
 		"test:coverage": "npm test -- --coverage",
 		"eject": "react-scripts eject"
 	},
 	"husky": {
 		"hooks": {
 			"pre-commit": "CI=true npm run test",
+			"pre-push": "npm run lint && npm test"
 		}
 	},
 	"eslintConfig": {
