@@ -1,8 +1,8 @@
-import { Provider } from "react-redux";
+import { Provider } from 'react-redux';
 import renderer from 'react-test-renderer';
 
 import { store } from '../../store/store';
-import { Input } from "./index";
+import { Input } from './index';
 
 const TEST_NAME = 'name';
 const TEST_TITLE = 'Title';

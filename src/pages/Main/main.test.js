@@ -11,7 +11,7 @@ describe('Main', () => {
 			<Provider store={store}>
 				<BrowserRouter>
 					<Routes>
-						<Route path="/test" element={<Main/>}/>
+						<Route path='/test' element={<Main/>}/>
 					</Routes>
 				</BrowserRouter>
 			</Provider>

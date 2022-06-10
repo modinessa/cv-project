@@ -34,7 +34,7 @@ export function TimeLine({data, error}) {
 								)
 							})}
 						</>
-						: <div className="responce-error">
+						: <div className='responce-error'>
 								Something went wrong; please review your server connection!
 							</div>
 				}

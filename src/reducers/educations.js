@@ -10,7 +10,7 @@ export const fetchEducations = createAsyncThunk(
 );
 
 export const educationsSlise = createSlice({
-	name: "educations",
+	name: 'educations',
 	initialState: {
 		educations: [],
 		errors: false

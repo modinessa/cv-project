@@ -12,7 +12,7 @@ export const fetchSkills = createAsyncThunk(
 );
 
 export const cvSlise = createSlice({
-	name: "cv",
+	name: 'cv',
 	initialState: {
 		editSkillsIsHide: true,
 		skills: [],

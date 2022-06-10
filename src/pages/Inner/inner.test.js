@@ -15,7 +15,7 @@ describe('Inner', () => {
 			<Provider store={store}>
 				<BrowserRouter>
 					<Routes>
-						<Route path="/test" element={<Inner/>}/>
+						<Route path='/test' element={<Inner/>}/>
 					</Routes>
 				</BrowserRouter>
 			</Provider>

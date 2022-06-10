@@ -1,4 +1,4 @@
-import { configureStore } from "@reduxjs/toolkit";
+import { configureStore } from '@reduxjs/toolkit';
 import cvReducer from '../reducers/skills';
 import educationsReducer from '../reducers/educations';
 

@@ -6,10 +6,10 @@ import { Feedback } from './index';
 
 const TEST_USERS = [{
     name: 'Name', 
-		photo: "https://photo.jpg",
+		photo: 'https://photo.jpg',
     feedback: 'Loreusum. Integer tincidunt. Cras dapibus.',
-		company: "A Game of Thrones",
-		website: "https://somesite.com/"
+		company: 'A Game of Thrones',
+		website: 'https://somesite.com/'
 	}];
 
 
