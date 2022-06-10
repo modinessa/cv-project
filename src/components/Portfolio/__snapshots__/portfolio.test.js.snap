@@ -1,0 +1,174 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Portfolio renders component 1`] = `
+<section
+  className="app-section"
+>
+  <h2>
+    Portfolio
+  </h2>
+  <div
+    className="filter-container"
+  >
+    <div
+      className="filter-item"
+    >
+      <div
+        className="filter isChecked"
+        id="All"
+        onClick={[Function]}
+      >
+        All
+      </div>
+      <div
+        className="separator"
+      >
+        /
+      </div>
+    </div>
+    <div
+      className="filter-item"
+    >
+      <div
+        className="filter false"
+        id="Code"
+        onClick={[Function]}
+      >
+        Code
+      </div>
+      <div
+        className="separator"
+      >
+        /
+      </div>
+    </div>
+    <div
+      className="filter-item"
+    >
+      <div
+        className="filter false"
+        id="UI"
+        onClick={[Function]}
+      >
+        UI
+      </div>
+    </div>
+  </div>
+  <div
+    className="container"
+  >
+    <div
+      className="card code"
+      style={
+        Object {
+          "background": "url(code.png)",
+        }
+      }
+    >
+      <div
+        className="card-info-container"
+      >
+        <div
+          className="card-info"
+        >
+          <h4>
+            Some text
+          </h4>
+          <p>
+            Donec pede justo, fringilla vel, aliquet nec, vulel, aliquet nec, vulputate eget eget, arcu. In enim justo
+          </p>
+          <a
+            href="https://somesite.com"
+          >
+            View resource
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      className="card ui"
+      style={
+        Object {
+          "background": "url(ui.png)",
+        }
+      }
+    >
+      <div
+        className="card-info-container"
+      >
+        <div
+          className="card-info"
+        >
+          <h4>
+            Title
+          </h4>
+          <p>
+            Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo
+          </p>
+          <a
+            href="https://somesite.com"
+          >
+            View resource
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      className="card code"
+      style={
+        Object {
+          "background": "url(code.png)",
+        }
+      }
+    >
+      <div
+        className="card-info-container"
+      >
+        <div
+          className="card-info"
+        >
+          <h4>
+            Bla-bla
+          </h4>
+          <p>
+            Pede justo, fringilla vel, aliquet nec, vulputate eget,vel, aliquet nec, vulputate eget arcu. In enim justo
+          </p>
+          <a
+            href="https://somesite.com"
+          >
+            View resource
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      className="card ui"
+      style={
+        Object {
+          "background": "url(ui.png)",
+        }
+      }
+    >
+      <div
+        className="card-info-container"
+      >
+        <div
+          className="card-info"
+        >
+          <h4>
+            Awesome text
+          </h4>
+          <p>
+            Donec pede jusaliquet necto, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo
+          </p>
+          <a
+            href="https://somesite.com"
+          >
+            View resource
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;

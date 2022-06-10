@@ -6,7 +6,7 @@ export function PortfolioInfo({ title, text, url}) {
 		<div className='card-info'>
 			<h4>{title}</h4>
 			<p>{text}</p>
-			<a href='https://somesite.com'>View resource</a>	
+			<a href={url}>View resource</a>	
 		</div>
 	)
 }

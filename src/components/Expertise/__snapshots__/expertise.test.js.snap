@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Expertise renders component 1`] = `
+<section
+  className="app-section"
+>
+  <h2>
+    Experience
+  </h2>
+  <div
+    className="app-experience-item"
+  >
+    <div
+      className="app-experience-title"
+    >
+      <h3>
+        Test
+      </h3>
+      <h4>
+        1900-2000
+      </h4>
+    </div>
+    <div
+      className="app-experience-info"
+    >
+      <h3>
+        Some Job
+      </h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Labore esse tempor nisi non mollit enim elit ullamco veniam elit duis nostrud. Enim pariatur ullamco dolor eu sunt ad velit aute.
+      </p>
+    </div>
+  </div>
+</section>
+`;

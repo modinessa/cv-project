@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Ruler renders component 1`] = `
+<div>
+  <div
+    className="ruler-container"
+  >
+    <div
+      className="mark-25"
+    />
+    <div
+      className="mark-50"
+    />
+    <div
+      className="mark-75"
+    />
+  </div>
+  <div
+    className="ruler-labels"
+  >
+    <div
+      className="item-1"
+    >
+      Beginner
+    </div>
+    <div
+      className="item-2"
+    >
+      Proficient
+    </div>
+    <div
+      className="item-3"
+    >
+      Expert
+    </div>
+    <div
+      className="item-4"
+    >
+      Master
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,963 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Inner renders component 1`] = `
+<main
+  id="app-container"
+>
+  <aside
+    className="app-navigation-panel false"
+  >
+    <div
+      className="panel false"
+    >
+      <div
+        className="app-section_photo-box"
+      >
+        <img
+          alt="Miu Miu"
+          className="app-photo avatar"
+          src="avatar.jpeg"
+        />
+        <h1>
+          Miu Miu
+        </h1>
+        <h2 />
+        <p />
+      </div>
+      <div
+        className="nav-menu"
+      >
+        <div
+          className="app-navigation"
+        >
+          <a
+            className="app-navigation__nav-list-item"
+            onClick={[Function]}
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-user fa-icon-nav"
+              data-icon="user"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 448 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            <span
+              className="item-name"
+            >
+              About me
+            </span>
+          </a>
+          <a
+            className="app-navigation__nav-list-item"
+            onClick={[Function]}
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-graduation-cap fa-icon-nav"
+              data-icon="graduation-cap"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 640 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M623.1 136.9l-282.7-101.2c-13.73-4.91-28.7-4.91-42.43 0L16.05 136.9C6.438 140.4 0 149.6 0 160s6.438 19.65 16.05 23.09L76.07 204.6c-11.89 15.8-20.26 34.16-24.55 53.95C40.05 263.4 32 274.8 32 288c0 9.953 4.814 18.49 11.94 24.36l-24.83 149C17.48 471.1 25 480 34.89 480H93.11c9.887 0 17.41-8.879 15.78-18.63l-24.83-149C91.19 306.5 96 297.1 96 288c0-10.29-5.174-19.03-12.72-24.89c4.252-17.76 12.88-33.82 24.94-47.03l190.6 68.23c13.73 4.91 28.7 4.91 42.43 0l282.7-101.2C633.6 179.6 640 170.4 640 160S633.6 140.4 623.1 136.9zM351.1 314.4C341.7 318.1 330.9 320 320 320c-10.92 0-21.69-1.867-32-5.555L142.8 262.5L128 405.3C128 446.6 213.1 480 320 480c105.1 0 192-33.4 192-74.67l-14.78-142.9L351.1 314.4z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            <span
+              className="item-name"
+            >
+              Education
+            </span>
+          </a>
+          <a
+            className="app-navigation__nav-list-item"
+            onClick={[Function]}
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-pencil fa-icon-nav"
+              data-icon="pencil"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M421.7 220.3L188.5 453.4L154.6 419.5L158.1 416H112C103.2 416 96 408.8 96 400V353.9L92.51 357.4C87.78 362.2 84.31 368 82.42 374.4L59.44 452.6L137.6 429.6C143.1 427.7 149.8 424.2 154.6 419.5L188.5 453.4C178.1 463.8 165.2 471.5 151.1 475.6L30.77 511C22.35 513.5 13.24 511.2 7.03 504.1C.8198 498.8-1.502 489.7 .976 481.2L36.37 360.9C40.53 346.8 48.16 333.9 58.57 323.5L291.7 90.34L421.7 220.3zM492.7 58.75C517.7 83.74 517.7 124.3 492.7 149.3L444.3 197.7L314.3 67.72L362.7 19.32C387.7-5.678 428.3-5.678 453.3 19.32L492.7 58.75z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            <span
+              className="item-name"
+            >
+              Experience
+            </span>
+          </a>
+          <a
+            className="app-navigation__nav-list-item"
+            onClick={[Function]}
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-diamond fa-icon-nav"
+              data-icon="diamond"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M500.3 227.7C515.9 243.3 515.9 268.7 500.3 284.3L284.3 500.3C268.7 515.9 243.3 515.9 227.7 500.3L11.72 284.3C-3.905 268.7-3.905 243.3 11.72 227.7L227.7 11.72C243.3-3.905 268.7-3.905 284.3 11.72L500.3 227.7z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            <span
+              className="item-name"
+            >
+              Skills
+            </span>
+          </a>
+          <a
+            className="app-navigation__nav-list-item"
+            onClick={[Function]}
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-briefcase fa-icon-nav"
+              data-icon="briefcase"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M320 336c0 8.844-7.156 16-16 16h-96C199.2 352 192 344.8 192 336V288H0v144C0 457.6 22.41 480 48 480h416c25.59 0 48-22.41 48-48V288h-192V336zM464 96H384V48C384 22.41 361.6 0 336 0h-160C150.4 0 128 22.41 128 48V96H48C22.41 96 0 118.4 0 144V256h512V144C512 118.4 489.6 96 464 96zM336 96h-160V48h160V96z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            <span
+              className="item-name"
+            >
+              Portfolio
+            </span>
+          </a>
+          <a
+            className="app-navigation__nav-list-item"
+            onClick={[Function]}
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-paper-plane fa-icon-nav"
+              data-icon="paper-plane"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M511.6 36.86l-64 415.1c-1.5 9.734-7.375 18.22-15.97 23.05c-4.844 2.719-10.27 4.097-15.68 4.097c-4.188 0-8.319-.8154-12.29-2.472l-122.6-51.1l-50.86 76.29C226.3 508.5 219.8 512 212.8 512C201.3 512 192 502.7 192 491.2v-96.18c0-7.115 2.372-14.03 6.742-19.64L416 96l-293.7 264.3L19.69 317.5C8.438 312.8 .8125 302.2 .0625 289.1s5.469-23.72 16.06-29.77l448-255.1c10.69-6.109 23.88-5.547 34 1.406S513.5 24.72 511.6 36.86z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            <span
+              className="item-name"
+            >
+              Contacts
+            </span>
+          </a>
+          <a
+            className="app-navigation__nav-list-item"
+            onClick={[Function]}
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-comment fa-icon-nav"
+              data-icon="comment"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M256 32C114.6 32 .0272 125.1 .0272 240c0 49.63 21.35 94.98 56.97 130.7c-12.5 50.37-54.27 95.27-54.77 95.77c-2.25 2.25-2.875 5.734-1.5 8.734C1.979 478.2 4.75 480 8 480c66.25 0 115.1-31.76 140.6-51.39C181.2 440.9 217.6 448 256 448c141.4 0 255.1-93.13 255.1-208S397.4 32 256 32z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            <span
+              className="item-name"
+            >
+              Feedbacks
+            </span>
+          </a>
+        </div>
+        <button
+          alt="Link"
+          className="app-button link-transparent"
+          onClick={[Function]}
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-chevron-left "
+            data-icon="chevron-left"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 320 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M224 480c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25l192-192c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l169.4 169.4c12.5 12.5 12.5 32.75 0 45.25C240.4 476.9 232.2 480 224 480z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+           
+          <span
+            className="text"
+          >
+            Go back
+          </span>
+        </button>
+      </div>
+    </div>
+    <span
+      id="menu-toggle"
+    >
+      <button
+        className="app-button square-left"
+        onClick={[Function]}
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-bars "
+          data-icon="bars"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 448 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </button>
+    </span>
+  </aside>
+  <div
+    className="app-section-container false"
+  >
+    <span
+      id="about-me"
+    >
+      <section
+        className="app-section"
+      >
+        <h2
+          className="app-title"
+        >
+          About me
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque
+        </p>
+      </section>
+    </span>
+    <span
+      id="education"
+    >
+      <section
+        className="app-section"
+      >
+        <h2
+          className="app-title"
+        >
+          Education
+        </h2>
+        <div
+          className="time-line-container"
+        >
+          <div
+            className="loader-wrapper"
+          >
+            <div
+              className="loader"
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-arrows-rotate fa-icon-loading"
+                data-icon="arrows-rotate"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 512 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M464 16c-17.67 0-32 14.31-32 32v74.09C392.1 66.52 327.4 32 256 32C161.5 32 78.59 92.34 49.58 182.2c-5.438 16.81 3.797 34.88 20.61 40.28c16.89 5.5 34.88-3.812 40.3-20.59C130.9 138.5 189.4 96 256 96c50.5 0 96.26 24.55 124.4 64H336c-17.67 0-32 14.31-32 32s14.33 32 32 32h128c17.67 0 32-14.31 32-32V48C496 30.31 481.7 16 464 16zM441.8 289.6c-16.92-5.438-34.88 3.812-40.3 20.59C381.1 373.5 322.6 416 256 416c-50.5 0-96.25-24.55-124.4-64H176c17.67 0 32-14.31 32-32s-14.33-32-32-32h-128c-17.67 0-32 14.31-32 32v144c0 17.69 14.33 32 32 32s32-14.31 32-32v-74.09C119.9 445.5 184.6 480 255.1 480c94.45 0 177.4-60.34 206.4-150.2C467.9 313 458.6 294.1 441.8 289.6z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+    </span>
+    <span
+      id="experience"
+    >
+      <section
+        className="app-section"
+      >
+        <h2>
+          Experience
+        </h2>
+        <div
+          className="app-experience-item"
+        >
+          <div
+            className="app-experience-title"
+          >
+            <h3>
+              Google
+            </h3>
+            <h4>
+              2013-2014
+            </h4>
+          </div>
+          <div
+            className="app-experience-info"
+          >
+            <h3>
+              Front-end developer / php programmer
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Labore esse tempor nisi non mollit enim elit ullamco veniam elit duis nostrud. Enim pariatur ullamco dolor eu sunt ad velit aute eiusmod aliquip voluptate. Velit magna labore eiusmod eiusmod labore amet eiusmod. In duis eiusmod commodo duis. Exercitation Lorem sint do aliquip veniam duis elit quis culpa irure quis nulla. Reprehenderit fugiat amet sint commodo.
+            </p>
+          </div>
+        </div>
+        <div
+          className="app-experience-item"
+        >
+          <div
+            className="app-experience-title"
+          >
+            <h3>
+              Twitter
+            </h3>
+            <h4>
+              2012
+            </h4>
+          </div>
+          <div
+            className="app-experience-info"
+          >
+            <h3>
+              Web developer
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor
+            </p>
+          </div>
+        </div>
+      </section>
+    </span>
+    <span
+      id="skills"
+    >
+      <section
+        className="app-section"
+        id="skills"
+      >
+        <div
+          className="skills-title"
+        >
+          <h2
+            className="app-title"
+          >
+            Skills
+          </h2>
+          <button
+            className="app-button"
+            onClick={[Function]}
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-pencil "
+              data-icon="pencil"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M421.7 220.3L188.5 453.4L154.6 419.5L158.1 416H112C103.2 416 96 408.8 96 400V353.9L92.51 357.4C87.78 362.2 84.31 368 82.42 374.4L59.44 452.6L137.6 429.6C143.1 427.7 149.8 424.2 154.6 419.5L188.5 453.4C178.1 463.8 165.2 471.5 151.1 475.6L30.77 511C22.35 513.5 13.24 511.2 7.03 504.1C.8198 498.8-1.502 489.7 .976 481.2L36.37 360.9C40.53 346.8 48.16 333.9 58.57 323.5L291.7 90.34L421.7 220.3zM492.7 58.75C517.7 83.74 517.7 124.3 492.7 149.3L444.3 197.7L314.3 67.72L362.7 19.32C387.7-5.678 428.3-5.678 453.3 19.32L492.7 58.75z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+             
+            <span
+              className="text"
+            >
+              Open edit
+            </span>
+          </button>
+        </div>
+        <div
+          className="skill-ranges"
+        >
+          <div>
+            <div
+              className="ruler-container"
+            >
+              <div
+                className="mark-25"
+              />
+              <div
+                className="mark-50"
+              />
+              <div
+                className="mark-75"
+              />
+            </div>
+            <div
+              className="ruler-labels"
+            >
+              <div
+                className="item-1"
+              >
+                Beginner
+              </div>
+              <div
+                className="item-2"
+              >
+                Proficient
+              </div>
+              <div
+                className="item-3"
+              >
+                Expert
+              </div>
+              <div
+                className="item-4"
+              >
+                Master
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </span>
+    <span
+      id="portfolio"
+    >
+      <section
+        className="app-section"
+      >
+        <h2>
+          Portfolio
+        </h2>
+        <div
+          className="filter-container"
+        >
+          <div
+            className="filter-item"
+          >
+            <div
+              className="filter isChecked"
+              id="All"
+              onClick={[Function]}
+            >
+              All
+            </div>
+            <div
+              className="separator"
+            >
+              /
+            </div>
+          </div>
+          <div
+            className="filter-item"
+          >
+            <div
+              className="filter false"
+              id="Code"
+              onClick={[Function]}
+            >
+              Code
+            </div>
+            <div
+              className="separator"
+            >
+              /
+            </div>
+          </div>
+          <div
+            className="filter-item"
+          >
+            <div
+              className="filter false"
+              id="UI"
+              onClick={[Function]}
+            >
+              UI
+            </div>
+          </div>
+        </div>
+        <div
+          className="container"
+        >
+          <div
+            className="card code"
+            style={
+              Object {
+                "background": "url(code.png)",
+              }
+            }
+          >
+            <div
+              className="card-info-container"
+            >
+              <div
+                className="card-info"
+              >
+                <h4>
+                  Some text
+                </h4>
+                <p>
+                  Donec pede justo, fringilla vel, aliquet nec, vulel, aliquet nec, vulputate eget eget, arcu. In enim justo
+                </p>
+                <a
+                  href="https://somesite.com"
+                >
+                  View resource
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            className="card ui"
+            style={
+              Object {
+                "background": "url(ui.png)",
+              }
+            }
+          >
+            <div
+              className="card-info-container"
+            >
+              <div
+                className="card-info"
+              >
+                <h4>
+                  Title
+                </h4>
+                <p>
+                  Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo
+                </p>
+                <a
+                  href="https://somesite.com"
+                >
+                  View resource
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            className="card code"
+            style={
+              Object {
+                "background": "url(code.png)",
+              }
+            }
+          >
+            <div
+              className="card-info-container"
+            >
+              <div
+                className="card-info"
+              >
+                <h4>
+                  Bla-bla
+                </h4>
+                <p>
+                  Pede justo, fringilla vel, aliquet nec, vulputate eget,vel, aliquet nec, vulputate eget arcu. In enim justo
+                </p>
+                <a
+                  href="https://somesite.com"
+                >
+                  View resource
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            className="card ui"
+            style={
+              Object {
+                "background": "url(ui.png)",
+              }
+            }
+          >
+            <div
+              className="card-info-container"
+            >
+              <div
+                className="card-info"
+              >
+                <h4>
+                  Awesome text
+                </h4>
+                <p>
+                  Donec pede jusaliquet necto, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo
+                </p>
+                <a
+                  href="https://somesite.com"
+                >
+                  View resource
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </span>
+    <span
+      id="contacts"
+    >
+      <section
+        className="app-section"
+      >
+        <h2>
+          Contacts
+        </h2>
+        <div
+          className="contacts-container"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-phone fa-icon-contacts"
+            data-icon="phone"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45l100.8-23.25C139.7-2.602 154.7 5.018 160.8 18.92l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <div
+            className="contact-info"
+          >
+            <a
+              href="tel:500-342-0242"
+            >
+              500 342 242
+            </a>
+          </div>
+        </div>
+        <div
+          className="contacts-container"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-envelope fa-icon-contacts"
+            data-icon="envelope"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <div
+            className="contact-info"
+          >
+            <a
+              href="mailto:office@kamsolutions.pl"
+            >
+              office@kamsolutions.pl
+            </a>
+          </div>
+        </div>
+        <div
+          className="contacts-container"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-twitter fa-icon-contacts"
+            data-icon="twitter"
+            data-prefix="fab"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M459.4 151.7c.325 4.548 .325 9.097 .325 13.65 0 138.7-105.6 298.6-298.6 298.6-59.45 0-114.7-17.22-161.1-47.11 8.447 .974 16.57 1.299 25.34 1.299 49.06 0 94.21-16.57 130.3-44.83-46.13-.975-84.79-31.19-98.11-72.77 6.498 .974 12.99 1.624 19.82 1.624 9.421 0 18.84-1.3 27.61-3.573-48.08-9.747-84.14-51.98-84.14-102.1v-1.299c13.97 7.797 30.21 12.67 47.43 13.32-28.26-18.84-46.78-51.01-46.78-87.39 0-19.49 5.197-37.36 14.29-52.95 51.65 63.67 129.3 105.3 216.4 109.8-1.624-7.797-2.599-15.92-2.599-24.04 0-57.83 46.78-104.9 104.9-104.9 30.21 0 57.5 12.67 76.67 33.14 23.72-4.548 46.46-13.32 66.6-25.34-7.798 24.37-24.37 44.83-46.13 57.83 21.12-2.273 41.58-8.122 60.43-16.24-14.29 20.79-32.16 39.31-52.63 54.25z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <div
+            className="contact-info"
+          >
+            <h3>
+              Twitter
+            </h3>
+            <a
+              className="small-link"
+              href="https://twitter.com/wordpress"
+            >
+              //https://twitter.com/wordpress
+            </a>
+          </div>
+        </div>
+        <div
+          className="contacts-container"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-facebook fa-icon-contacts"
+            data-icon="facebook"
+            data-prefix="fab"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.8 90.69 226.4 209.3 245V327.7h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.3 482.4 504 379.8 504 256z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <div
+            className="contact-info"
+          >
+            <h3>
+              Facebook
+            </h3>
+            <a
+              className="small-link"
+              href="https://www.facebook.com/avdeeva.inessa"
+            >
+              https://www.facebook.com
+            </a>
+          </div>
+        </div>
+        <div
+          className="contacts-container"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-skype fa-icon-contacts"
+            data-icon="skype"
+            data-prefix="fab"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 448 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M424.7 299.8c2.9-14 4.7-28.9 4.7-43.8 0-113.5-91.9-205.3-205.3-205.3-14.9 0-29.7 1.7-43.8 4.7C161.3 40.7 137.7 32 112 32 50.2 32 0 82.2 0 144c0 25.7 8.7 49.3 23.3 68.2-2.9 14-4.7 28.9-4.7 43.8 0 113.5 91.9 205.3 205.3 205.3 14.9 0 29.7-1.7 43.8-4.7 19 14.6 42.6 23.3 68.2 23.3 61.8 0 112-50.2 112-112 .1-25.6-8.6-49.2-23.2-68.1zm-194.6 91.5c-65.6 0-120.5-29.2-120.5-65 0-16 9-30.6 29.5-30.6 31.2 0 34.1 44.9 88.1 44.9 25.7 0 42.3-11.4 42.3-26.3 0-18.7-16-21.6-42-28-62.5-15.4-117.8-22-117.8-87.2 0-59.2 58.6-81.1 109.1-81.1 55.1 0 110.8 21.9 110.8 55.4 0 16.9-11.4 31.8-30.3 31.8-28.3 0-29.2-33.5-75-33.5-25.7 0-42 7-42 22.5 0 19.8 20.8 21.8 69.1 33 41.4 9.3 90.7 26.8 90.7 77.6 0 59.1-57.1 86.5-112 86.5z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <div
+            className="contact-info"
+          >
+            <h3>
+              Skype
+            </h3>
+            <a
+              className="small-link"
+              href="skype:echo123?call"
+            >
+              kamsolutions.pl
+            </a>
+          </div>
+        </div>
+      </section>
+    </span>
+    <span
+      id="feedbacks"
+    >
+      <section
+        className="app-section"
+      >
+        <h2>
+          Feedbacks
+        </h2>
+        <div
+          className="app-feedbacks"
+        >
+          <div
+            className="app-feedbacks-user"
+          >
+            <div
+              className="info"
+            >
+              <h3 />
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+              </p>
+            </div>
+            <div
+              className="user-info"
+            >
+              <img
+                alt="Huanito"
+                className="app-photo user-photo"
+                src="https://www.atlassian.com/dam/jcr:ba03a215-2f45-40f5-8540-b2015223c918/Max-R_Headshot%20(1).jpg"
+              />
+              <div>
+                A Game of Thrones,
+              </div>
+              <a
+                href="https://somesite.com/"
+              >
+                somesite.com
+              </a>
+            </div>
+          </div>
+          <div
+            className="app-feedbacks-user"
+          >
+            <div
+              className="info"
+            >
+              <h3 />
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+              </p>
+            </div>
+            <div
+              className="user-info"
+            >
+              <img
+                alt="Huanito"
+                className="app-photo user-photo"
+                src="https://www.atlassian.com/dam/jcr:ba03a215-2f45-40f5-8540-b2015223c918/Max-R_Headshot%20(1).jpg"
+              />
+              <div>
+                A Game of Thrones,
+              </div>
+              <a
+                href="https://somesite.com/"
+              >
+                somesite.com
+              </a>
+            </div>
+          </div>
+          <div
+            className="app-feedbacks-user"
+          >
+            <div
+              className="info"
+            >
+              <h3 />
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+              </p>
+            </div>
+            <div
+              className="user-info"
+            >
+              <img
+                alt="Huanito"
+                className="app-photo user-photo"
+                src="https://www.atlassian.com/dam/jcr:ba03a215-2f45-40f5-8540-b2015223c918/Max-R_Headshot%20(1).jpg"
+              />
+              <div>
+                A Game of Thrones,
+              </div>
+              <a
+                href="https://somesite.com/"
+              >
+                somesite.com
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </span>
+    <button
+      className="app-button square-bottom"
+      onClick={[Function]}
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-chevron-up "
+        data-icon="chevron-up"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 448 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M416 352c-8.188 0-16.38-3.125-22.62-9.375L224 173.3l-169.4 169.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l192-192c12.5-12.5 32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25C432.4 348.9 424.2 352 416 352z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </button>
+  </div>
+</main>
+`;

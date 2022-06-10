@@ -4,5 +4,7 @@ module.exports = {
 		'src/**/*.{js,jsx}',
 		'scr/*.{js,jsx}',
 		'scr/**/**/*.{js,jsx}',
+		'scr/**/**/**/*.{js,jsx}',
+		'!scr/**/**/constants.{js,jsx}',
 	],
 };
