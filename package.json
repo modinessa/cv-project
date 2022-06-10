@@ -10,7 +10,6 @@
 		"@hookform/resolvers": "^2.9.0",
 		"@reduxjs/toolkit": "^1.8.2",
 		"@testing-library/jest-dom": "^5.16.4",
-		"@testing-library/react": "^13.3.0",
 		"@testing-library/user-event": "^13.5.0",
 		"express": "^4.18.1",
 		"isotope-layout": "^3.0.6",
@@ -27,10 +26,24 @@
 		"web-vitals": "^2.1.4",
 		"yup": "^0.32.11"
 	},
+	"jest": {
+		"collectCoverageFrom": [
+			"src/**/*.{js,jsx,ts,tsx}",
+			"!/node_modules/"
+		],
+		"coverageThreshold": {
+			"global": {
+				"branches": 35,
+				"functions": 35,
+				"lines": 35,
+				"statements": 35
+			}
+		}
+	},
 	"scripts": {
 		"start": "react-scripts start",
 		"build": "react-scripts build",
-		"test": "react-scripts test",
+		"test": "react-scripts test --coverage --watchAll=false",
 		"test:coverage": "npm test -- --coverage",
 		"eject": "react-scripts eject"
 	},
@@ -53,6 +66,12 @@
 		]
 	},
 	"devDependencies": {
-		"miragejs": "^0.1.45"
+		"@testing-library/react": "^13.3.0",
+		"jest": "^28.1.1",
+		"jest-dom": "^4.0.0",
+		"miragejs": "^0.1.45",
+		"msw": "^0.42.1",
+		"nock": "^13.2.6",
+		"react-test-renderer": "^18.1.0"
 	}
 }

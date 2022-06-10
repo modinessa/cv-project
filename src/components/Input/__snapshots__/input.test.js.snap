@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input renders component 1`] = `
+Array [
+  <div
+    className="data-row"
+  >
+    <label
+      className="title-column"
+      htmlFor="name"
+    >
+      Title:
+    </label>
+    <input
+      className="data-column skill-input "
+      placeholder="Enter title"
+    />
+  </div>,
+  <div
+    className="error-message"
+  />,
+]
+`;

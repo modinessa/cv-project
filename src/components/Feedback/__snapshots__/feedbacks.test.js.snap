@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Feedback renders component 1`] = `
+<section
+  className="app-section"
+>
+  <h2>
+    Feedbacks
+  </h2>
+  <div
+    className="app-feedbacks"
+  >
+    <div
+      className="app-feedbacks-user"
+    >
+      <div
+        className="info"
+      >
+        <h3 />
+        <p>
+          Loreusum. Integer tincidunt. Cras dapibus.
+        </p>
+      </div>
+      <div
+        className="user-info"
+      >
+        <img
+          alt="Name"
+          className="app-photo user-photo"
+          src="https://photo.jpg"
+        />
+        <div>
+          A Game of Thrones,
+        </div>
+        <a
+          href="https://somesite.com/"
+        >
+          somesite.com
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+`;

@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Box renders component 1`] = `
+<section
+  className="app-section"
+>
+  <h2
+    className="app-title"
+  >
+    Title
+  </h2>
+  <p>
+    Content bla-bla
+  </p>
+</section>
+`;

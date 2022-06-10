@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button renders component 1`] = `
+<button
+  className="app-button link-button"
+>
+  FontAwesomeIcon
+   
+  <span
+    className="text"
+  >
+    Texty bla-bla
+  </span>
+</button>
+`;
+
+exports[`Button renders component 2`] = `
+<button
+  alt="Link"
+  className="app-button link-transparent"
+>
+  FontAwesomeIcon
+   
+  <span
+    className="text"
+  >
+    Texty bla-bla
+  </span>
+</button>
+`;
+
+exports[`Button renders component 3`] = `
+<button
+  className="app-button square-top"
+>
+  FontAwesomeIcon
+</button>
+`;
+
+exports[`Button renders component 4`] = `
+<button
+  className="app-button square-right"
+>
+  FontAwesomeIcon
+</button>
+`;
+
+exports[`Button renders component 5`] = `
+<button
+  className="app-button square-left"
+>
+  FontAwesomeIcon
+</button>
+`;
+
+exports[`Button renders component 6`] = `
+<button
+  className="app-button square-bottom"
+>
+  FontAwesomeIcon
+</button>
+`;
+
+exports[`Button renders component 7`] = `
+<button
+  className="app-button"
+>
+  FontAwesomeIcon
+   
+  <span
+    className="text"
+  >
+    Texty bla-bla
+  </span>
+</button>
+`;

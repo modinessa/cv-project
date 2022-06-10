@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PhotoBox renders component 1`] = `
+<div
+  className="app-section_photo-box"
+>
+  <img
+    alt="Name"
+    className="app-photo avatar"
+    src="../../assets/images/test.jpeg"
+  />
+  <h1>
+    Name
+  </h1>
+  <h2>
+    Title
+  </h2>
+  <p>
+    Content bla-bla
+  </p>
+</div>
+`;

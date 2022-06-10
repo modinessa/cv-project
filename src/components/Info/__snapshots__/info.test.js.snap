@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Info renders component 1`] = `
+<div
+  className="info"
+>
+  <h3>
+    Title
+  </h3>
+  <p>
+    Content bla-bla
+  </p>
+</div>
+`;
