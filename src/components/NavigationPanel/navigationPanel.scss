@@ -5,17 +5,13 @@
 	display: flex;
 	min-width: 280px;
 	padding-top: 20px;
-	height: 100vh;
+	height: 100%;
 	position: fixed;
-
+	transition: all 0.6s ease;
 }
 
 .nav-closed {
-	min-width: 30px;
-}
-
-div.menu-closed {
-	display: none;
+	transform: translateX(-250px);
 }
 
 .panel {
@@ -26,6 +22,7 @@ div.menu-closed {
 	min-width: 250px;
 	margin-top: -20px;
 	padding-top: 20px;
+	transition: all 0.6s ease;
 }
 
 .nav-menu {
@@ -45,10 +42,13 @@ div.menu-closed {
 
 	.panel {
 		min-width: 54px;
+		transition: all 0.6s ease;
+		overflow-x: hidden;
 	}
 
 	.nav-closed {
-		min-width: 30px;
+		transform: translateX(-54px);
+		//min-width: 30px;
 	}
 
 }

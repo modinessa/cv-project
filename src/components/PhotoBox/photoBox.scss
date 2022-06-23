@@ -19,12 +19,14 @@
 .main-screen h1 {
 	margin-top: 10px;
 	margin-bottom: 10px;
+	text-align: center;
 }
 
 .main-screen h2 {
 	color: $white-color;
 	margin-top: 0px;
 	margin-bottom: 10px;
+	text-align: center;
 }
 
 .main-screen p {
@@ -33,16 +35,18 @@
 	text-align: center;
 	margin-top: 0px;
 	margin-bottom: 10px;
-	width: 500px;
+	max-width: 500px;
 
 }
 
 .app-navigation-panel img {
 	width: 100px;
 	height: 100px;
+	transition: all 0.6s ease;
 }
 
 .app-navigation-panel h1 {
+	transition: all 0.6s ease;
 	font-size: 16px;
 }
 
@@ -55,9 +59,12 @@
 	.app-navigation-panel img {
 		width: 40px;
 		height: 40px;
+		transition: all 0.6s ease;
 	}
 
 	.app-navigation-panel h1 {
-		display: none;
+		transition: all 0.6s ease;
+		color: transparent;
+		font-size: 0;
 	}
 }
