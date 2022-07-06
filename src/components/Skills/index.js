@@ -33,6 +33,8 @@ export function Skills() {
 	const {skills, editSkillsIsHide} = useSelector((state) => state.cv);
 	const dispatch = useDispatch();
 
+
+
 	useEffect(() => {
 		dispatch(fetchSkills())
 		// eslint-disable-next-line
@@ -46,6 +48,10 @@ export function Skills() {
 	} = useForm({resolver: yupResolver(schema)});
 
 	const isError = Object.keys(errors).length > 0;
+
+	const handleDoubleClick = (e) => {
+		window.alert((e.target))
+	}
 
 	const clickHandler = useCallback(() => {
 		dispatch(setEditSkillsIsHide(!editSkillsIsHide));
@@ -98,7 +104,9 @@ export function Skills() {
 						<RangeBar 
 										key={skill.skill}
 										name={skill.skill}
-										range={parseInt(skill.range)} />
+										range={parseInt(skill.range)}
+										handleDoubleClick={handleDoubleClick}
+							/>
 					)
 				})}
 				<Ruler/>
